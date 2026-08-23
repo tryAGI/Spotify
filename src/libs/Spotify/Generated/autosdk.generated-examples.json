@@ -1,0 +1,81 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "Check User\u0027s Saved Items",
+      "Slug": "check-library-contains",
+      "Description": "Check if one or more items are already saved in the current user\u0027s library. Accepts Spotify URIs for tracks, albums, episodes, shows, audiobooks, artists, users, and playlists.",
+      "Language": "http",
+      "Code": "### Check User\u0027s Saved Items\n\n# @name check-library-contains\nGET {{host}}/me/library/contains?uris={{uris}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Array of booleans\n# Content-Type: application/json\n# 400\n# Description: Bad Request. Possible reasons: missing \u0060uris\u0060 parameter, invalid URI format, unsupported URI type, or more than 40 URIs provided.\n\n# Content-Type: application/json\n# 401\n# Description: Bad or expired token. This can happen if the user revoked a token or\nthe access token has expired. You should re-authenticate the user.\n\n# Content-Type: application/json\n# 403\n# Description: Bad OAuth request (wrong consumer key, bad nonce, expired\ntimestamp...). Unfortunately, re-authenticating the user won\u0027t help here.\n\n# Content-Type: application/json\n# 429\n# Description: The app has exceeded its rate limits.\n\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "check-library-contains",
+      "Setup": null
+    },
+    {
+      "Order": 2,
+      "Title": "Start/Resume Playback",
+      "Slug": "start-a-users-playback",
+      "Description": "Start a new context or resume current playback on the user\u0027s active device. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.",
+      "Language": "csharp",
+      "Code": "using var client = new SpotifyClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::Spotify.StartAUsersPlaybackRequest\u003E(\n    @\u0022{\n  \u0022\u0022context_uri\u0022\u0022: \u0022\u0022spotify:album:5ht7ItJgpBH7W6vJ5BqpPr\u0022\u0022,\n  \u0022\u0022offset\u0022\u0022: {\n    \u0022\u0022position\u0022\u0022: 5\n  },\n  \u0022\u0022position_ms\u0022\u0022: 0\n}\u0022)!;\n\nawait client.Player.StartAUsersPlaybackAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "start-a-users-playback",
+      "Setup": "This example assumes \u0060using Spotify;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 3,
+      "Title": "Transfer Playback",
+      "Slug": "transfer-a-users-playback",
+      "Description": "Transfer playback to a new device and optionally begin playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.",
+      "Language": "csharp",
+      "Code": "using var client = new SpotifyClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::Spotify.TransferAUsersPlaybackRequest\u003E(\n    @\u0022{\n  \u0022\u0022device_ids\u0022\u0022: [\n    \u0022\u002274ASZWbe4lXaubB36ztrGX\u0022\u0022\n  ]\n}\u0022)!;\n\nawait client.Player.TransferAUsersPlaybackAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "transfer-a-users-playback",
+      "Setup": "This example assumes \u0060using Spotify;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 4,
+      "Title": "Change Playlist Details",
+      "Slug": "change-playlist-details",
+      "Description": "Change a playlist\u0027s name and public/private state. (The user must, of\ncourse, own the playlist.)",
+      "Language": "http",
+      "Code": "### Change Playlist Details\n\n# @name change-playlist-details\nPUT {{host}}/playlists/{{playlist_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022Updated Playlist Name\u0022,\n  \u0022description\u0022: \u0022Updated playlist description\u0022,\n  \u0022public\u0022: false\n}\n\n## Responses\n# 200\n# Description: Playlist updated\n# 401\n# Description: Bad or expired token. This can happen if the user revoked a token or\nthe access token has expired. You should re-authenticate the user.\n\n# Content-Type: application/json\n# 403\n# Description: Bad OAuth request (wrong consumer key, bad nonce, expired\ntimestamp...). Unfortunately, re-authenticating the user won\u0027t help here.\n\n# Content-Type: application/json\n# 429\n# Description: The app has exceeded its rate limits.\n\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "change-playlist-details",
+      "Setup": null
+    },
+    {
+      "Order": 5,
+      "Title": "Create Playlist",
+      "Slug": "create-playlist",
+      "Description": "Create a playlist for the current Spotify user. (The playlist will be empty until\nyou [add tracks](/documentation/web-api/reference/add-tracks-to-playlist).)\nEach user is generally limited to a maximum of 11000 playlists.",
+      "Language": "csharp",
+      "Code": "using var client = new SpotifyClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::Spotify.CreatePlaylistRequest\u003E(\n    @\u0022{\n  \u0022\u0022name\u0022\u0022: \u0022\u0022New Playlist\u0022\u0022,\n  \u0022\u0022description\u0022\u0022: \u0022\u0022New playlist description\u0022\u0022,\n  \u0022\u0022public\u0022\u0022: false\n}\u0022)!;\n\nvar response = await client.Playlists.CreatePlaylistAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "create-playlist",
+      "Setup": "This example assumes \u0060using Spotify;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 6,
+      "Title": "Update Playlist Items",
+      "Slug": "reorder-or-replace-playlists-items",
+      "Description": "Either reorder or replace items in a playlist depending on the request\u0027s parameters.\nTo reorder items, include \u0060range_start\u0060, \u0060insert_before\u0060, \u0060range_length\u0060 and \u0060snapshot_id\u0060 in the request\u0027s body.\nTo replace items, include \u0060uris\u0060 as either a query parameter or in the request\u0027s body.\nReplacing items in a playlist will overwrite its existing items. This operation can be used for replacing or clearing items in a playlist.\n\u003Cbr/\u003E\n**Note**: Replace and reorder are mutually exclusive operations which share the same endpoint, but have different parameters.\nThese operations can\u0027t be applied together in a single request.",
+      "Language": "http",
+      "Code": "### Update Playlist Items\n\n# @name reorder-or-replace-playlists-items\nPUT {{host}}/playlists/{{playlist_id}}/items?uris={{uris}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022range_start\u0022: 1,\n  \u0022insert_before\u0022: 3,\n  \u0022range_length\u0022: 2\n}\n\n## Responses\n# 200\n# Description: A snapshot ID for the playlist\n# Content-Type: application/json\n# 401\n# Description: Bad or expired token. This can happen if the user revoked a token or\nthe access token has expired. You should re-authenticate the user.\n\n# Content-Type: application/json\n# 403\n# Description: Bad OAuth request (wrong consumer key, bad nonce, expired\ntimestamp...). Unfortunately, re-authenticating the user won\u0027t help here.\n\n# Content-Type: application/json\n# 429\n# Description: The app has exceeded its rate limits.\n\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "reorder-or-replace-playlists-items",
+      "Setup": null
+    },
+    {
+      "Order": 7,
+      "Title": "Add Custom Playlist Cover Image",
+      "Slug": "upload-custom-playlist-cover",
+      "Description": "Replace the image used to represent a specific playlist.",
+      "Language": "http",
+      "Code": "### Add Custom Playlist Cover Image\n\n# @name upload-custom-playlist-cover\nPUT {{host}}/playlists/{{playlist_id}}/images\nAuthorization: Bearer {{token}}\nContent-Type: image/jpeg\nAccept: application/json\n\n## Responses\n# 202\n# Description: Image uploaded\n# 401\n# Description: Bad or expired token. This can happen if the user revoked a token or\nthe access token has expired. You should re-authenticate the user.\n\n# Content-Type: application/json\n# 403\n# Description: Bad OAuth request (wrong consumer key, bad nonce, expired\ntimestamp...). Unfortunately, re-authenticating the user won\u0027t help here.\n\n# Content-Type: application/json\n# 429\n# Description: The app has exceeded its rate limits.\n\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "upload-custom-playlist-cover",
+      "Setup": null
+    }
+  ]
+}

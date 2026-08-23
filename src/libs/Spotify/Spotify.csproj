@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget">
+    <Description>Modern generated C# SDK for the complete Spotify Web API, including catalog search, playback, libraries, playlists, and personalization.</Description>
+    <PackageTags>spotify;music;audio;streaming;playback;api;client;sdk;dotnet;autosdk;openapi</PackageTags>
+  </PropertyGroup>
+
+</Project>
