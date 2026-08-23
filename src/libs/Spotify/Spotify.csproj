@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Nuget">
+    <PackageId>tryAGI.Spotify</PackageId>
     <Description>Modern generated C# SDK for the complete Spotify Web API, including catalog search, playback, libraries, playlists, and personalization.</Description>
     <PackageTags>spotify;music;audio;streaming;playback;api;client;sdk;dotnet;autosdk;openapi</PackageTags>
   </PropertyGroup>

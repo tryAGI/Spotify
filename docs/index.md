@@ -2,7 +2,7 @@
   <h1>Spotify</h1>
   <p class="docs-hero-lead">Modern .NET SDK for Spotify generated from the provider's OpenAPI definition with AutoSDK.</p>
   <div class="docs-badge-row">
-    <a href="https://www.nuget.org/packages/Spotify/"><img alt="Nuget package" src="https://img.shields.io/nuget/vpre/Spotify"></a>
+    <a href="https://www.nuget.org/packages/tryAGI.Spotify/"><img alt="Nuget package" src="https://img.shields.io/nuget/vpre/tryAGI.Spotify"></a>
     <a href="https://github.com/tryAGI/Spotify/actions/workflows/dotnet.yml"><img alt="dotnet" src="https://github.com/tryAGI/Spotify/actions/workflows/dotnet.yml/badge.svg?branch=main"></a>
     <a href="https://github.com/tryAGI/Spotify/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/tryAGI/Spotify"></a>
     <a href="https://discord.gg/Ca2xhfBf3v"><img alt="Discord" src="https://img.shields.io/discord/1115206893015662663?label=Discord&amp;logo=discord&amp;logoColor=white&amp;color=d82679"></a>
@@ -33,6 +33,10 @@
 </div>
 
 ## Usage
+
+```shell
+dotnet add package tryAGI.Spotify
+```
 
 ```csharp
 using Spotify;
