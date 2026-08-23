@@ -80,6 +80,25 @@ public sealed class ContractTests
         items[0].Track!.Artists.Should().ContainSingle(artist => artist.Name == "Massive Attack");
     }
 
+    [TestMethod]
+    public async Task CurrentPlaybackOrDefault_ReturnsNullForDocumentedNoContentResponse()
+    {
+        var handler = new RecordingHandler(_ => new HttpResponseMessage(HttpStatusCode.NoContent));
+        using var httpClient = new HttpClient(handler)
+        {
+            BaseAddress = new Uri(SpotifyClient.DefaultBaseUrl),
+        };
+        using var client = new SpotifyClient("access-token", httpClient, disposeHttpClient: false);
+
+        var playback = await client.Player.GetCurrentPlaybackOrDefaultAsync();
+
+        playback.Should().BeNull();
+        handler.Attempts.Should().Be(1);
+        handler.LastRequestUri.Should().NotBeNull();
+        handler.LastRequestUri!.AbsolutePath.Should().EndWith("/me/player");
+        handler.LastAuthorization.Should().Be(new AuthenticationHeaderValue("Bearer", "access-token"));
+    }
+
     private sealed class RecordingHandler(Func<int, HttpResponseMessage> responseFactory)
         : HttpMessageHandler
     {

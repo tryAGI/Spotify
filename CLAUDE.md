@@ -11,3 +11,5 @@ The SDK uses bearer OAuth tokens and excludes deprecated operations. The schema 
 The Advantage integration depends on catalog search, playback, devices, queue, playlists, saved tracks/albums, unified library mutation and membership checks, personalization, artist/album/track metadata, and current-user profile endpoints.
 
 Use `PagingSavedTrackObject.GetItems()` for saved-track pages. Spotify declares this response with `allOf`; the helper reconstructs its typed items from source-generated raw model data when the generated union selects the paging metadata half.
+
+Use `IPlayerClient.GetCurrentPlaybackOrDefaultAsync()` for current playback. Spotify documents HTTP 204 when no playback is active; the generated non-null response method cannot deserialize that empty success body, while this helper maps it to `null`.
