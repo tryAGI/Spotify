@@ -51,7 +51,7 @@ Pass a Spotify OAuth access token; the SDK emits the required bearer authorizati
 
 
 ```csharp
-using var client = new SpotifyClient(accessToken);
+using var client = new SpotifyClient(apiKey);
 
 // Search the Spotify catalog with one or more strongly typed result categories.
 var result = await client.Search.SearchAsync(
@@ -64,10 +64,13 @@ var result = await client.Search.SearchAsync(
 
 
 ```csharp
-using var client = new SpotifyClient(accessToken);
+using var client = new SpotifyClient(apiKey);
 
 // Read the current user's saved tracks for preference and library synchronization workflows.
 var page = await client.Tracks.GetUsersSavedTracksAsync(limit: 20, offset: 0);
+
+// GetItems handles Spotify's composed paging schema and returns typed SavedTrackObject values.
+var tracks = page.GetItems();
 ```
 <!-- EXAMPLES:END -->
 

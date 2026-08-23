@@ -16,6 +16,9 @@ public partial class Tests
         //// Read the current user's saved tracks for preference and library synchronization workflows.
         var page = await client.Tracks.GetUsersSavedTracksAsync(limit: 20, offset: 0);
 
-        page.Object.Should().NotBeNull();
+        //// GetItems handles Spotify's composed paging schema and returns typed SavedTrackObject values.
+        var tracks = page.GetItems();
+
+        tracks.Should().NotBeNull();
     }
 }
