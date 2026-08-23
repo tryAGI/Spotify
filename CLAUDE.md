@@ -13,3 +13,5 @@ The Advantage integration depends on catalog search, playback, devices, queue, p
 Use `PagingSavedTrackObject.GetItems()` for saved-track pages. Spotify declares this response with `allOf`; the helper reconstructs its typed items from source-generated raw model data when the generated union selects the paging metadata half.
 
 Use `IPlayerClient.GetCurrentPlaybackOrDefaultAsync()` for current playback. Spotify documents HTTP 204 when no playback is active; the generated non-null response method cannot deserialize that empty success body, while this helper maps it to `null`.
+
+Bodyless-success contract coverage must include every generated operation whose official schema has a success response without content: playlist details and cover upload, unified library save/remove, all player commands, and the nullable current-playback read. Keep the test matrix synchronized when the upstream schema adds another empty `200`, `202`, or `204` response.
