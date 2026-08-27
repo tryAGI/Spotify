@@ -20,7 +20,7 @@ namespace Spotify.JsonConverters
                     {
                         return global::Spotify.CurrentlyPlayingContextObjectItemDiscriminatorTypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -4,12 +4,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CurrentlyPlayingContextObjectItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Track,
     }

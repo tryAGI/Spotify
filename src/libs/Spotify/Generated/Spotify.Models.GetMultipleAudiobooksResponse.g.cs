@@ -4,12 +4,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetMultipleAudiobooksResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audiobooks")]
         [global::System.Text.Json.Serialization.JsonRequired]

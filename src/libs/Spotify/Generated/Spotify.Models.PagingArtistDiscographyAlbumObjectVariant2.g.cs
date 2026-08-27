@@ -4,12 +4,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PagingArtistDiscographyAlbumObjectVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         public global::System.Collections.Generic.IList<global::Spotify.ArtistDiscographyAlbumObject>? Items { get; set; }

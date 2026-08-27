@@ -10,7 +10,7 @@ namespace Spotify
     public enum SearchIncludeExternal
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
     }

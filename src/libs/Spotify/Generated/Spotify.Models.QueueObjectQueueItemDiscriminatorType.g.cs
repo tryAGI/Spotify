@@ -4,12 +4,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum QueueObjectQueueItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Track,
     }

@@ -5,12 +5,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PagingSavedTrackObject : global::System.IEquatable<PagingSavedTrackObject>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.PagingObject? PagingObject { get; init; }
@@ -19,7 +19,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PagingObject))]
@@ -27,7 +27,7 @@ namespace Spotify
         public bool IsPagingObject => PagingObject != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPagingObject(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.PagingObject PickPagingObject() => IsPagingObject
             ? PagingObject!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingObject' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.PagingSavedTrackObjectVariant2? PagingSavedTrackObjectVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PagingSavedTrackObjectVariant2))]
@@ -64,7 +64,7 @@ namespace Spotify
         public bool IsPagingSavedTrackObjectVariant2 => PagingSavedTrackObjectVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPagingSavedTrackObjectVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.PagingSavedTrackObjectVariant2 PickPagingSavedTrackObjectVariant2() => IsPagingSavedTrackObjectVariant2
             ? PagingSavedTrackObjectVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingSavedTrackObjectVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PagingSavedTrackObject(global::Spotify.PagingObject value) => new PagingSavedTrackObject((global::Spotify.PagingObject?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.PagingObject?(PagingSavedTrackObject @this) => @this.PagingObject;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PagingSavedTrackObject(global::Spotify.PagingObject? value)
         {
@@ -101,22 +101,22 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PagingSavedTrackObject FromPagingObject(global::Spotify.PagingObject? value) => new PagingSavedTrackObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PagingSavedTrackObject(global::Spotify.PagingSavedTrackObjectVariant2 value) => new PagingSavedTrackObject((global::Spotify.PagingSavedTrackObjectVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.PagingSavedTrackObjectVariant2?(PagingSavedTrackObject @this) => @this.PagingSavedTrackObjectVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PagingSavedTrackObject(global::Spotify.PagingSavedTrackObjectVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PagingSavedTrackObject FromPagingSavedTrackObjectVariant2(global::Spotify.PagingSavedTrackObjectVariant2? value) => new PagingSavedTrackObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PagingSavedTrackObject(
             global::Spotify.PagingObject? pagingObject,
@@ -141,23 +141,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PagingSavedTrackObjectVariant2 as object ??
-            PagingObject as object 
+            PagingObject as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PagingObject?.ToString() ??
-            PagingSavedTrackObjectVariant2?.ToString() 
+            PagingSavedTrackObjectVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.PagingObject, TResult>? pagingObject = null,
@@ -190,7 +190,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.PagingObject>? pagingObject = null,
@@ -214,7 +214,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.PagingObject>? pagingObject = null,
@@ -237,7 +237,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PagingSavedTrackObject other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.PagingObject?>.Default.Equals(PagingObject, other.PagingObject) &&
-                global::System.Collections.Generic.EqualityComparer<global::Spotify.PagingSavedTrackObjectVariant2?>.Default.Equals(PagingSavedTrackObjectVariant2, other.PagingSavedTrackObjectVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Spotify.PagingSavedTrackObjectVariant2?>.Default.Equals(PagingSavedTrackObjectVariant2, other.PagingSavedTrackObjectVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PagingSavedTrackObject obj1, PagingSavedTrackObject obj2)
         {
@@ -277,7 +277,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PagingSavedTrackObject obj1, PagingSavedTrackObject obj2)
         {
@@ -285,7 +285,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

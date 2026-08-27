@@ -9,7 +9,7 @@ namespace Spotify
     public sealed partial class ReorderOrReplacePlaylistsItemsRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uris")]
         public global::System.Collections.Generic.IList<string>? Uris { get; set; }

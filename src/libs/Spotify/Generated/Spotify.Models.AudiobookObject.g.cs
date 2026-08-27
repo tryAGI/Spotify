@@ -5,12 +5,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct AudiobookObject : global::System.IEquatable<AudiobookObject>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.AudiobookBase? Base { get; init; }
@@ -19,7 +19,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Base))]
@@ -27,7 +27,7 @@ namespace Spotify
         public bool IsBase => Base != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBase(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.AudiobookBase PickBase() => IsBase
             ? Base!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.AudiobookObjectVariant2? AudiobookObjectVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AudiobookObjectVariant2))]
@@ -64,7 +64,7 @@ namespace Spotify
         public bool IsAudiobookObjectVariant2 => AudiobookObjectVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAudiobookObjectVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.AudiobookObjectVariant2 PickAudiobookObjectVariant2() => IsAudiobookObjectVariant2
             ? AudiobookObjectVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AudiobookObjectVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AudiobookObject(global::Spotify.AudiobookBase value) => new AudiobookObject((global::Spotify.AudiobookBase?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.AudiobookBase?(AudiobookObject @this) => @this.Base;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudiobookObject(global::Spotify.AudiobookBase? value)
         {
@@ -101,22 +101,22 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AudiobookObject FromBase(global::Spotify.AudiobookBase? value) => new AudiobookObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AudiobookObject(global::Spotify.AudiobookObjectVariant2 value) => new AudiobookObject((global::Spotify.AudiobookObjectVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.AudiobookObjectVariant2?(AudiobookObject @this) => @this.AudiobookObjectVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudiobookObject(global::Spotify.AudiobookObjectVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AudiobookObject FromAudiobookObjectVariant2(global::Spotify.AudiobookObjectVariant2? value) => new AudiobookObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudiobookObject(
             global::Spotify.AudiobookBase? @base,
@@ -141,23 +141,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AudiobookObjectVariant2 as object ??
-            Base as object 
+            Base as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Base?.ToString() ??
-            AudiobookObjectVariant2?.ToString() 
+            AudiobookObjectVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.AudiobookBase, TResult>? @base = null,
@@ -190,7 +190,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.AudiobookBase>? @base = null,
@@ -214,7 +214,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.AudiobookBase>? @base = null,
@@ -237,7 +237,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AudiobookObject other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.AudiobookBase?>.Default.Equals(Base, other.Base) &&
-                global::System.Collections.Generic.EqualityComparer<global::Spotify.AudiobookObjectVariant2?>.Default.Equals(AudiobookObjectVariant2, other.AudiobookObjectVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Spotify.AudiobookObjectVariant2?>.Default.Equals(AudiobookObjectVariant2, other.AudiobookObjectVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AudiobookObject obj1, AudiobookObject obj2)
         {
@@ -277,7 +277,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AudiobookObject obj1, AudiobookObject obj2)
         {
@@ -285,7 +285,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

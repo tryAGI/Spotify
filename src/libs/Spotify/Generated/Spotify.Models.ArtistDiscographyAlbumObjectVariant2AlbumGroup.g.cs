@@ -10,19 +10,19 @@ namespace Spotify
     public enum ArtistDiscographyAlbumObjectVariant2AlbumGroup
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Album,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppearsOn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Compilation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Single,
     }

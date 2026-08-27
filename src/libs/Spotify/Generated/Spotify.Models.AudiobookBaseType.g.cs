@@ -9,7 +9,7 @@ namespace Spotify
     public enum AudiobookBaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audiobook,
     }

@@ -5,12 +5,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct SimplifiedChapterObject : global::System.IEquatable<SimplifiedChapterObject>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.ChapterBase? Base { get; init; }
@@ -19,7 +19,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Base))]
@@ -27,7 +27,7 @@ namespace Spotify
         public bool IsBase => Base != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBase(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.ChapterBase PickBase() => IsBase
             ? Base!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? SimplifiedChapterObjectVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SimplifiedChapterObjectVariant2))]
@@ -64,7 +64,7 @@ namespace Spotify
         public bool IsSimplifiedChapterObjectVariant2 => SimplifiedChapterObjectVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSimplifiedChapterObjectVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickSimplifiedChapterObjectVariant2() => IsSimplifiedChapterObjectVariant2
             ? SimplifiedChapterObjectVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SimplifiedChapterObjectVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SimplifiedChapterObject(global::Spotify.ChapterBase value) => new SimplifiedChapterObject((global::Spotify.ChapterBase?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.ChapterBase?(SimplifiedChapterObject @this) => @this.Base;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SimplifiedChapterObject(global::Spotify.ChapterBase? value)
         {
@@ -101,12 +101,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SimplifiedChapterObject FromBase(global::Spotify.ChapterBase? value) => new SimplifiedChapterObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SimplifiedChapterObject(
             global::Spotify.ChapterBase? @base,
@@ -118,23 +118,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             SimplifiedChapterObjectVariant2 as object ??
-            Base as object 
+            Base as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Base?.ToString() ??
-            SimplifiedChapterObjectVariant2?.ToString() 
+            SimplifiedChapterObjectVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.ChapterBase, TResult>? @base = null,
@@ -167,7 +167,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.ChapterBase>? @base = null,
@@ -191,7 +191,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.ChapterBase>? @base = null,
@@ -214,7 +214,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SimplifiedChapterObject other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.ChapterBase?>.Default.Equals(Base, other.Base) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(SimplifiedChapterObjectVariant2, other.SimplifiedChapterObjectVariant2) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(SimplifiedChapterObjectVariant2, other.SimplifiedChapterObjectVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SimplifiedChapterObject obj1, SimplifiedChapterObject obj2)
         {
@@ -254,7 +254,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SimplifiedChapterObject obj1, SimplifiedChapterObject obj2)
         {
@@ -262,7 +262,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

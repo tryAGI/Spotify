@@ -4,54 +4,54 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SearchResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tracks")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingTrackObjectJsonConverter))]
         public global::Spotify.PagingTrackObject? Tracks { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("artists")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingArtistObjectJsonConverter))]
         public global::Spotify.PagingArtistObject? Artists { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("albums")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingSimplifiedAlbumObjectJsonConverter))]
         public global::Spotify.PagingSimplifiedAlbumObject? Albums { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("playlists")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingPlaylistObjectJsonConverter))]
         public global::Spotify.PagingPlaylistObject? Playlists { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shows")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingSimplifiedShowObjectJsonConverter))]
         public global::Spotify.PagingSimplifiedShowObject? Shows { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("episodes")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingSimplifiedEpisodeObjectJsonConverter))]
         public global::Spotify.PagingSimplifiedEpisodeObject? Episodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audiobooks")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingSimplifiedAudiobookObjectJsonConverter))]

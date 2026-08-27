@@ -5,12 +5,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ArtistDiscographyAlbumObject : global::System.IEquatable<ArtistDiscographyAlbumObject>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.SimplifiedAlbumObject? Simplified { get; init; }
@@ -19,7 +19,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Simplified))]
@@ -27,7 +27,7 @@ namespace Spotify
         public bool IsSimplified => Simplified != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSimplified(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.SimplifiedAlbumObject PickSimplified() => IsSimplified
             ? Simplified!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Simplified' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.ArtistDiscographyAlbumObjectVariant2? ArtistDiscographyAlbumObjectVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ArtistDiscographyAlbumObjectVariant2))]
@@ -64,7 +64,7 @@ namespace Spotify
         public bool IsArtistDiscographyAlbumObjectVariant2 => ArtistDiscographyAlbumObjectVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickArtistDiscographyAlbumObjectVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.ArtistDiscographyAlbumObjectVariant2 PickArtistDiscographyAlbumObjectVariant2() => IsArtistDiscographyAlbumObjectVariant2
             ? ArtistDiscographyAlbumObjectVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ArtistDiscographyAlbumObjectVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArtistDiscographyAlbumObject(global::Spotify.SimplifiedAlbumObject value) => new ArtistDiscographyAlbumObject((global::Spotify.SimplifiedAlbumObject?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.SimplifiedAlbumObject?(ArtistDiscographyAlbumObject @this) => @this.Simplified;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArtistDiscographyAlbumObject(global::Spotify.SimplifiedAlbumObject? value)
         {
@@ -101,22 +101,22 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArtistDiscographyAlbumObject FromSimplified(global::Spotify.SimplifiedAlbumObject? value) => new ArtistDiscographyAlbumObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArtistDiscographyAlbumObject(global::Spotify.ArtistDiscographyAlbumObjectVariant2 value) => new ArtistDiscographyAlbumObject((global::Spotify.ArtistDiscographyAlbumObjectVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.ArtistDiscographyAlbumObjectVariant2?(ArtistDiscographyAlbumObject @this) => @this.ArtistDiscographyAlbumObjectVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArtistDiscographyAlbumObject(global::Spotify.ArtistDiscographyAlbumObjectVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArtistDiscographyAlbumObject FromArtistDiscographyAlbumObjectVariant2(global::Spotify.ArtistDiscographyAlbumObjectVariant2? value) => new ArtistDiscographyAlbumObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArtistDiscographyAlbumObject(
             global::Spotify.SimplifiedAlbumObject? simplified,
@@ -141,23 +141,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ArtistDiscographyAlbumObjectVariant2 as object ??
-            Simplified as object 
+            Simplified as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Simplified?.ToString() ??
-            ArtistDiscographyAlbumObjectVariant2?.ToString() 
+            ArtistDiscographyAlbumObjectVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.SimplifiedAlbumObject?, TResult>? simplified = null,
@@ -190,7 +190,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.SimplifiedAlbumObject?>? simplified = null,
@@ -214,7 +214,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.SimplifiedAlbumObject?>? simplified = null,
@@ -237,7 +237,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ArtistDiscographyAlbumObject other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.SimplifiedAlbumObject?>.Default.Equals(Simplified, other.Simplified) &&
-                global::System.Collections.Generic.EqualityComparer<global::Spotify.ArtistDiscographyAlbumObjectVariant2?>.Default.Equals(ArtistDiscographyAlbumObjectVariant2, other.ArtistDiscographyAlbumObjectVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Spotify.ArtistDiscographyAlbumObjectVariant2?>.Default.Equals(ArtistDiscographyAlbumObjectVariant2, other.ArtistDiscographyAlbumObjectVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ArtistDiscographyAlbumObject obj1, ArtistDiscographyAlbumObject obj2)
         {
@@ -277,7 +277,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ArtistDiscographyAlbumObject obj1, ArtistDiscographyAlbumObject obj2)
         {
@@ -285,7 +285,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

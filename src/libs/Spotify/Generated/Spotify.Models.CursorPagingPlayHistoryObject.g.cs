@@ -5,12 +5,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CursorPagingPlayHistoryObject : global::System.IEquatable<CursorPagingPlayHistoryObject>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.CursorPagingObject? CursorPagingObject { get; init; }
@@ -19,7 +19,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CursorPagingObject))]
@@ -27,7 +27,7 @@ namespace Spotify
         public bool IsCursorPagingObject => CursorPagingObject != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCursorPagingObject(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.CursorPagingObject PickCursorPagingObject() => IsCursorPagingObject
             ? CursorPagingObject!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CursorPagingObject' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.CursorPagingPlayHistoryObjectVariant2? CursorPagingPlayHistoryObjectVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CursorPagingPlayHistoryObjectVariant2))]
@@ -64,7 +64,7 @@ namespace Spotify
         public bool IsCursorPagingPlayHistoryObjectVariant2 => CursorPagingPlayHistoryObjectVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCursorPagingPlayHistoryObjectVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.CursorPagingPlayHistoryObjectVariant2 PickCursorPagingPlayHistoryObjectVariant2() => IsCursorPagingPlayHistoryObjectVariant2
             ? CursorPagingPlayHistoryObjectVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CursorPagingPlayHistoryObjectVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CursorPagingPlayHistoryObject(global::Spotify.CursorPagingObject value) => new CursorPagingPlayHistoryObject((global::Spotify.CursorPagingObject?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.CursorPagingObject?(CursorPagingPlayHistoryObject @this) => @this.CursorPagingObject;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CursorPagingPlayHistoryObject(global::Spotify.CursorPagingObject? value)
         {
@@ -101,22 +101,22 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CursorPagingPlayHistoryObject FromCursorPagingObject(global::Spotify.CursorPagingObject? value) => new CursorPagingPlayHistoryObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CursorPagingPlayHistoryObject(global::Spotify.CursorPagingPlayHistoryObjectVariant2 value) => new CursorPagingPlayHistoryObject((global::Spotify.CursorPagingPlayHistoryObjectVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.CursorPagingPlayHistoryObjectVariant2?(CursorPagingPlayHistoryObject @this) => @this.CursorPagingPlayHistoryObjectVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CursorPagingPlayHistoryObject(global::Spotify.CursorPagingPlayHistoryObjectVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CursorPagingPlayHistoryObject FromCursorPagingPlayHistoryObjectVariant2(global::Spotify.CursorPagingPlayHistoryObjectVariant2? value) => new CursorPagingPlayHistoryObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CursorPagingPlayHistoryObject(
             global::Spotify.CursorPagingObject? cursorPagingObject,
@@ -141,23 +141,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CursorPagingPlayHistoryObjectVariant2 as object ??
-            CursorPagingObject as object 
+            CursorPagingObject as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CursorPagingObject?.ToString() ??
-            CursorPagingPlayHistoryObjectVariant2?.ToString() 
+            CursorPagingPlayHistoryObjectVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.CursorPagingObject, TResult>? cursorPagingObject = null,
@@ -190,7 +190,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.CursorPagingObject>? cursorPagingObject = null,
@@ -214,7 +214,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.CursorPagingObject>? cursorPagingObject = null,
@@ -237,7 +237,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CursorPagingPlayHistoryObject other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.CursorPagingObject?>.Default.Equals(CursorPagingObject, other.CursorPagingObject) &&
-                global::System.Collections.Generic.EqualityComparer<global::Spotify.CursorPagingPlayHistoryObjectVariant2?>.Default.Equals(CursorPagingPlayHistoryObjectVariant2, other.CursorPagingPlayHistoryObjectVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Spotify.CursorPagingPlayHistoryObjectVariant2?>.Default.Equals(CursorPagingPlayHistoryObjectVariant2, other.CursorPagingPlayHistoryObjectVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CursorPagingPlayHistoryObject obj1, CursorPagingPlayHistoryObject obj2)
         {
@@ -277,7 +277,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CursorPagingPlayHistoryObject obj1, CursorPagingPlayHistoryObject obj2)
         {
@@ -285,7 +285,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

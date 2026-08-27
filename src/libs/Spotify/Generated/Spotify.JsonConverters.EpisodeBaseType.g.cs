@@ -20,7 +20,7 @@ namespace Spotify.JsonConverters
                     {
                         return global::Spotify.EpisodeBaseTypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

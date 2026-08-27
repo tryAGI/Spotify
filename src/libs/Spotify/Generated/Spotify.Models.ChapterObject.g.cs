@@ -5,12 +5,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ChapterObject : global::System.IEquatable<ChapterObject>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.ChapterBase? Base { get; init; }
@@ -19,7 +19,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Base))]
@@ -27,7 +27,7 @@ namespace Spotify
         public bool IsBase => Base != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBase(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.ChapterBase PickBase() => IsBase
             ? Base!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.ChapterObjectVariant2? ChapterObjectVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChapterObjectVariant2))]
@@ -64,7 +64,7 @@ namespace Spotify
         public bool IsChapterObjectVariant2 => ChapterObjectVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChapterObjectVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.ChapterObjectVariant2 PickChapterObjectVariant2() => IsChapterObjectVariant2
             ? ChapterObjectVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChapterObjectVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChapterObject(global::Spotify.ChapterBase value) => new ChapterObject((global::Spotify.ChapterBase?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.ChapterBase?(ChapterObject @this) => @this.Base;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChapterObject(global::Spotify.ChapterBase? value)
         {
@@ -101,22 +101,22 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChapterObject FromBase(global::Spotify.ChapterBase? value) => new ChapterObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChapterObject(global::Spotify.ChapterObjectVariant2 value) => new ChapterObject((global::Spotify.ChapterObjectVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.ChapterObjectVariant2?(ChapterObject @this) => @this.ChapterObjectVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChapterObject(global::Spotify.ChapterObjectVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChapterObject FromChapterObjectVariant2(global::Spotify.ChapterObjectVariant2? value) => new ChapterObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChapterObject(
             global::Spotify.ChapterBase? @base,
@@ -141,23 +141,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ChapterObjectVariant2 as object ??
-            Base as object 
+            Base as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Base?.ToString() ??
-            ChapterObjectVariant2?.ToString() 
+            ChapterObjectVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.ChapterBase, TResult>? @base = null,
@@ -190,7 +190,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.ChapterBase>? @base = null,
@@ -214,7 +214,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.ChapterBase>? @base = null,
@@ -237,7 +237,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChapterObject other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.ChapterBase?>.Default.Equals(Base, other.Base) &&
-                global::System.Collections.Generic.EqualityComparer<global::Spotify.ChapterObjectVariant2?>.Default.Equals(ChapterObjectVariant2, other.ChapterObjectVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Spotify.ChapterObjectVariant2?>.Default.Equals(ChapterObjectVariant2, other.ChapterObjectVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChapterObject obj1, ChapterObject obj2)
         {
@@ -277,7 +277,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChapterObject obj1, ChapterObject obj2)
         {
@@ -285,7 +285,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -10,15 +10,15 @@ namespace Spotify
     public enum AlbumRestrictionObjectReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Explicit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Market,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Product,
     }

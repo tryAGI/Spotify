@@ -4,16 +4,16 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetUsersTopArtistsAndTracksResponseItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Artist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Track,
     }

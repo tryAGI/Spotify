@@ -14,7 +14,7 @@ namespace Spotify
     public sealed partial class SpotifyClient : global::Spotify.ISpotifyClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.spotify.com/v1";
 
@@ -41,7 +41,7 @@ namespace Spotify
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Spotify.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -51,7 +51,7 @@ namespace Spotify
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AlbumsClient Albums => new AlbumsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -60,7 +60,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArtistsClient Artists => new ArtistsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -69,7 +69,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudiobooksClient Audiobooks => new AudiobooksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -78,7 +78,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChaptersClient Chapters => new ChaptersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -87,7 +87,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EpisodesClient Episodes => new EpisodesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -96,7 +96,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LibraryClient Library => new LibraryClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -105,7 +105,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlayerClient Player => new PlayerClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -114,7 +114,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlaylistsClient Playlists => new PlaylistsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -123,7 +123,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchClient Search => new SearchClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -132,7 +132,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ShowsClient Shows => new ShowsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -141,7 +141,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TracksClient Tracks => new TracksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -150,7 +150,7 @@ namespace Spotify
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UsersClient Users => new UsersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
