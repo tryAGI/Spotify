@@ -5,12 +5,12 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PlaylistOwnerObject : global::System.IEquatable<PlaylistOwnerObject>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.PlaylistUserObject? User { get; init; }
@@ -19,7 +19,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(User))]
@@ -27,7 +27,7 @@ namespace Spotify
         public bool IsUser => User != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUser(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.PlaylistUserObject PickUser() => IsUser
             ? User!
             : throw new global::System.InvalidOperationException($"Expected union variant 'User' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.PlaylistOwnerObjectVariant2? PlaylistOwnerObjectVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PlaylistOwnerObjectVariant2))]
@@ -64,7 +64,7 @@ namespace Spotify
         public bool IsPlaylistOwnerObjectVariant2 => PlaylistOwnerObjectVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPlaylistOwnerObjectVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.PlaylistOwnerObjectVariant2 PickPlaylistOwnerObjectVariant2() => IsPlaylistOwnerObjectVariant2
             ? PlaylistOwnerObjectVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PlaylistOwnerObjectVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PlaylistOwnerObject(global::Spotify.PlaylistUserObject value) => new PlaylistOwnerObject((global::Spotify.PlaylistUserObject?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.PlaylistUserObject?(PlaylistOwnerObject @this) => @this.User;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlaylistOwnerObject(global::Spotify.PlaylistUserObject? value)
         {
@@ -101,22 +101,22 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PlaylistOwnerObject FromUser(global::Spotify.PlaylistUserObject? value) => new PlaylistOwnerObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PlaylistOwnerObject(global::Spotify.PlaylistOwnerObjectVariant2 value) => new PlaylistOwnerObject((global::Spotify.PlaylistOwnerObjectVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.PlaylistOwnerObjectVariant2?(PlaylistOwnerObject @this) => @this.PlaylistOwnerObjectVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlaylistOwnerObject(global::Spotify.PlaylistOwnerObjectVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PlaylistOwnerObject FromPlaylistOwnerObjectVariant2(global::Spotify.PlaylistOwnerObjectVariant2? value) => new PlaylistOwnerObject(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlaylistOwnerObject(
             global::Spotify.PlaylistUserObject? user,
@@ -141,23 +141,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PlaylistOwnerObjectVariant2 as object ??
-            User as object 
+            User as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             User?.ToString() ??
-            PlaylistOwnerObjectVariant2?.ToString() 
+            PlaylistOwnerObjectVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.PlaylistUserObject, TResult>? user = null,
@@ -190,7 +190,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.PlaylistUserObject>? user = null,
@@ -214,7 +214,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.PlaylistUserObject>? user = null,
@@ -237,7 +237,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PlaylistOwnerObject other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.PlaylistUserObject?>.Default.Equals(User, other.User) &&
-                global::System.Collections.Generic.EqualityComparer<global::Spotify.PlaylistOwnerObjectVariant2?>.Default.Equals(PlaylistOwnerObjectVariant2, other.PlaylistOwnerObjectVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Spotify.PlaylistOwnerObjectVariant2?>.Default.Equals(PlaylistOwnerObjectVariant2, other.PlaylistOwnerObjectVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PlaylistOwnerObject obj1, PlaylistOwnerObject obj2)
         {
@@ -277,7 +277,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PlaylistOwnerObject obj1, PlaylistOwnerObject obj2)
         {
@@ -285,7 +285,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

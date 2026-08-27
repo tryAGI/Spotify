@@ -9,7 +9,7 @@ namespace Spotify
     public enum ShowBaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Show,
     }

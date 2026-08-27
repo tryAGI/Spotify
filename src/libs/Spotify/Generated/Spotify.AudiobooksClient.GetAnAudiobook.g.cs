@@ -169,7 +169,7 @@ namespace Spotify
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Spotify.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
@@ -362,7 +362,7 @@ namespace Spotify
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // The request contains malformed data in path, query parameters, or body. 
+                            // The request contains malformed data in path, query parameters, or body.
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -399,7 +399,7 @@ namespace Spotify
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // Bad or expired token. This can happen if the user revoked a token or the access token has expired. You should re-authenticate the user. 
+                            // Bad or expired token. This can happen if the user revoked a token or the access token has expired. You should re-authenticate the user.
                             if ((int)__response.StatusCode == 401)
                             {
                                 string? __content_401 = null;
@@ -436,7 +436,7 @@ namespace Spotify
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here. 
+                            // Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -473,7 +473,7 @@ namespace Spotify
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The requested resource cannot be found. 
+                            // The requested resource cannot be found.
                             if ((int)__response.StatusCode == 404)
                             {
                                 string? __content_404 = null;
@@ -510,7 +510,7 @@ namespace Spotify
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // The app has exceeded its rate limits. 
+                            // The app has exceeded its rate limits.
                             if ((int)__response.StatusCode == 429)
                             {
                                 string? __content_429 = null;

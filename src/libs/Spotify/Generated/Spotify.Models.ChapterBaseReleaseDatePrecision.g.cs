@@ -10,15 +10,15 @@ namespace Spotify
     public enum ChapterBaseReleaseDatePrecision
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Day,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Month,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Year,
     }

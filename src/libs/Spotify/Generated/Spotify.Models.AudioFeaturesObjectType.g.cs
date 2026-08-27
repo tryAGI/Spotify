@@ -9,7 +9,7 @@ namespace Spotify
     public enum AudioFeaturesObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AudioFeatures,
     }

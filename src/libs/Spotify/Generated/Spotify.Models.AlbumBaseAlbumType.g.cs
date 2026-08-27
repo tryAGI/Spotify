@@ -10,15 +10,15 @@ namespace Spotify
     public enum AlbumBaseAlbumType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Album,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Compilation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Single,
     }

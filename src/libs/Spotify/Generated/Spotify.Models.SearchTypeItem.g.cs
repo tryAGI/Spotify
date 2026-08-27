@@ -4,36 +4,36 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SearchTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Album,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Artist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audiobook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Episode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Playlist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Show,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Track,
     }

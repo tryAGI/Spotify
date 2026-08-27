@@ -9,7 +9,7 @@ namespace Spotify
     public enum SimplifiedArtistObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Artist,
     }

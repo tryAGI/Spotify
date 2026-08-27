@@ -9,7 +9,7 @@ namespace Spotify
     public enum PublicUserObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

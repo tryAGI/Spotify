@@ -6,7 +6,7 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PrivateUserObject
     {

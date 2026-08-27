@@ -43,68 +43,68 @@ namespace Spotify
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AlbumsClient Albums { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArtistsClient Artists { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudiobooksClient Audiobooks { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChaptersClient Chapters { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EpisodesClient Episodes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LibraryClient Library { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlayerClient Player { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlaylistsClient Playlists { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchClient Search { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ShowsClient Shows { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TracksClient Tracks { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UsersClient Users { get; }
 

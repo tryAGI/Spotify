@@ -5,17 +5,17 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct GetUsersTopArtistsAndTracksResponseItem : global::System.IEquatable<GetUsersTopArtistsAndTracksResponseItem>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.GetUsersTopArtistsAndTracksResponseItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.ArtistObject? Artist { get; init; }
@@ -24,7 +24,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Artist))]
@@ -32,7 +32,7 @@ namespace Spotify
         public bool IsArtist => Artist != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickArtist(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.ArtistObject PickArtist() => IsArtist
             ? Artist!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Artist' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Spotify.TrackObject? Track { get; init; }
@@ -61,7 +61,7 @@ namespace Spotify
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Track))]
@@ -69,7 +69,7 @@ namespace Spotify
         public bool IsTrack => Track != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTrack(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Spotify.TrackObject PickTrack() => IsTrack
             ? Track!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Track' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GetUsersTopArtistsAndTracksResponseItem(global::Spotify.ArtistObject value) => new GetUsersTopArtistsAndTracksResponseItem((global::Spotify.ArtistObject?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.ArtistObject?(GetUsersTopArtistsAndTracksResponseItem @this) => @this.Artist;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GetUsersTopArtistsAndTracksResponseItem(global::Spotify.ArtistObject? value)
         {
@@ -106,22 +106,22 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GetUsersTopArtistsAndTracksResponseItem FromArtist(global::Spotify.ArtistObject? value) => new GetUsersTopArtistsAndTracksResponseItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GetUsersTopArtistsAndTracksResponseItem(global::Spotify.TrackObject value) => new GetUsersTopArtistsAndTracksResponseItem((global::Spotify.TrackObject?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Spotify.TrackObject?(GetUsersTopArtistsAndTracksResponseItem @this) => @this.Track;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GetUsersTopArtistsAndTracksResponseItem(global::Spotify.TrackObject? value)
         {
@@ -129,12 +129,12 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GetUsersTopArtistsAndTracksResponseItem FromTrack(global::Spotify.TrackObject? value) => new GetUsersTopArtistsAndTracksResponseItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GetUsersTopArtistsAndTracksResponseItem(
             global::Spotify.GetUsersTopArtistsAndTracksResponseItemDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Track as object ??
-            Artist as object 
+            Artist as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Artist?.ToString() ??
-            Track?.ToString() 
+            Track?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Spotify.ArtistObject, TResult>? artist = null,
@@ -198,7 +198,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Spotify.ArtistObject>? artist = null,
@@ -222,7 +222,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Spotify.ArtistObject>? artist = null,
@@ -245,7 +245,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(GetUsersTopArtistsAndTracksResponseItem other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Spotify.ArtistObject?>.Default.Equals(Artist, other.Artist) &&
-                global::System.Collections.Generic.EqualityComparer<global::Spotify.TrackObject?>.Default.Equals(Track, other.Track) 
+                global::System.Collections.Generic.EqualityComparer<global::Spotify.TrackObject?>.Default.Equals(Track, other.Track)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(GetUsersTopArtistsAndTracksResponseItem obj1, GetUsersTopArtistsAndTracksResponseItem obj2)
         {
@@ -285,7 +285,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(GetUsersTopArtistsAndTracksResponseItem obj1, GetUsersTopArtistsAndTracksResponseItem obj2)
         {
@@ -293,7 +293,7 @@ namespace Spotify
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -4,7 +4,7 @@
 namespace Spotify
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PagingFeaturedPlaylistObject
     {
@@ -17,7 +17,7 @@ namespace Spotify
         public string? Message { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("playlists")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Spotify.JsonConverters.PagingPlaylistObjectJsonConverter))]

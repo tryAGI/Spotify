@@ -10,11 +10,11 @@ namespace Spotify
     public enum FollowArtistsUsersType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Artist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }
