@@ -16,6 +16,7 @@ namespace Spotify
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.LinkedTrackObject), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.ExternalUrlObject), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
@@ -513,7 +514,6 @@ namespace Spotify
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.TransferAUsersPlaybackResponse3), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Spotify.DeviceObject>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse2), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -526,6 +526,7 @@ namespace Spotify
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse2), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse3), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse4), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetTheUsersCurrentlyPlayingTrackResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
