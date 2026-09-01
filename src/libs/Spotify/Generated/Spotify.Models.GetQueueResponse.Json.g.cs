@@ -138,7 +138,6 @@ namespace Spotify
                 jsonSerializerOptions);
         }
 
-
         /// <summary>
         /// Serializes the current instance to raw JSON using the provided JsonSerializerContext.
         /// </summary>

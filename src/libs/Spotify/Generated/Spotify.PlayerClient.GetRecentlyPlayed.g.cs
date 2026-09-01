@@ -28,14 +28,14 @@ namespace Spotify
         partial void PrepareGetRecentlyPlayedArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
-            ref global::System.DateTimeOffset? after,
-            ref global::System.DateTimeOffset? before);
+            ref int? after,
+            ref int? before);
         partial void PrepareGetRecentlyPlayedRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             int? limit,
-            global::System.DateTimeOffset? after,
-            global::System.DateTimeOffset? before);
+            int? after,
+            int? before);
         partial void ProcessGetRecentlyPlayedResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -71,8 +71,8 @@ namespace Spotify
         /// <exception cref="global::Spotify.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Spotify.CursorPagingPlayHistoryObject> GetRecentlyPlayedAsync(
             int? limit = default,
-            global::System.DateTimeOffset? after = default,
-            global::System.DateTimeOffset? before = default,
+            int? after = default,
+            int? before = default,
             global::Spotify.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -112,8 +112,8 @@ namespace Spotify
         /// <exception cref="global::Spotify.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Spotify.AutoSDKHttpResponse<global::Spotify.CursorPagingPlayHistoryObject>> GetRecentlyPlayedAsResponseAsync(
             int? limit = default,
-            global::System.DateTimeOffset? after = default,
-            global::System.DateTimeOffset? before = default,
+            int? after = default,
+            int? before = default,
             global::Spotify.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
