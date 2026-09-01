@@ -30,8 +30,8 @@ namespace Spotify
         /// <exception cref="global::Spotify.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Spotify.CursorPagingPlayHistoryObject> GetRecentlyPlayedAsync(
             int? limit = default,
-            global::System.DateTimeOffset? after = default,
-            global::System.DateTimeOffset? before = default,
+            int? after = default,
+            int? before = default,
             global::Spotify.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -60,8 +60,8 @@ namespace Spotify
         /// <exception cref="global::Spotify.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Spotify.AutoSDKHttpResponse<global::Spotify.CursorPagingPlayHistoryObject>> GetRecentlyPlayedAsResponseAsync(
             int? limit = default,
-            global::System.DateTimeOffset? after = default,
-            global::System.DateTimeOffset? before = default,
+            int? after = default,
+            int? before = default,
             global::Spotify.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
