@@ -34,7 +34,7 @@ namespace Spotify
         /// <inheritdoc/>
         public global::Spotify.AutoSDKClientOptions Options { get; }
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Spotify.SourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Spotify.AlbumsSourceGenerationContext.Default);
 
         /// <summary>
         ///
