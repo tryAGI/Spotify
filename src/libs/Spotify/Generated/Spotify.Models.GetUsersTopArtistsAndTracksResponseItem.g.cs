@@ -47,8 +47,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ArtistObject PickArtist() => IsArtist
-            ? Artist!
+        public global::Spotify.ArtistObject PickArtist() => Artist is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Artist' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.TrackObject PickTrack() => IsTrack
-            ? Track!
+        public global::Spotify.TrackObject PickTrack() => Track is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Track' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsArtist && artist != null)
+            if (Artist is { } __value0 && artist != null)
             {
-                return artist(Artist!);
+                return artist(__value0);
             }
-            else if (IsTrack && track != null)
+            else if (Track is { } __value1 && track != null)
             {
-                return track(Track!);
+                return track(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsArtist)
+            if (Artist is { } __value0)
             {
-                artist?.Invoke(Artist!);
+                artist?.Invoke(__value0);
             }
-            else if (IsTrack)
+            else if (Track is { } __value1)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsArtist)
+            if (Artist is { } __value0)
             {
-                artist?.Invoke(Artist!);
+                artist?.Invoke(__value0);
             }
-            else if (IsTrack)
+            else if (Track is { } __value1)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value1);
             }
         }
 

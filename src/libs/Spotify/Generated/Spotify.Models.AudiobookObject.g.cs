@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AudiobookBase PickBase() => IsBase
-            ? Base!
+        public global::Spotify.AudiobookBase PickBase() => Base is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AudiobookObjectVariant2 PickAudiobookObjectVariant2() => IsAudiobookObjectVariant2
-            ? AudiobookObjectVariant2!
+        public global::Spotify.AudiobookObjectVariant2 PickAudiobookObjectVariant2() => AudiobookObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AudiobookObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsBase && @base != null)
+            if (Base is { } __value0 && @base != null)
             {
-                return @base(Base!);
+                return @base(__value0);
             }
-            else if (IsAudiobookObjectVariant2 && audiobookObjectVariant2 != null)
+            else if (AudiobookObjectVariant2 is { } __value1 && audiobookObjectVariant2 != null)
             {
-                return audiobookObjectVariant2(AudiobookObjectVariant2!);
+                return audiobookObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsBase)
+            if (Base is { } __value0)
             {
-                @base?.Invoke(Base!);
+                @base?.Invoke(__value0);
             }
-            else if (IsAudiobookObjectVariant2)
+            else if (AudiobookObjectVariant2 is { } __value1)
             {
-                audiobookObjectVariant2?.Invoke(AudiobookObjectVariant2!);
+                audiobookObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsBase)
+            if (Base is { } __value0)
             {
-                @base?.Invoke(Base!);
+                @base?.Invoke(__value0);
             }
-            else if (IsAudiobookObjectVariant2)
+            else if (AudiobookObjectVariant2 is { } __value1)
             {
-                audiobookObjectVariant2?.Invoke(AudiobookObjectVariant2!);
+                audiobookObjectVariant2?.Invoke(__value1);
             }
         }
 

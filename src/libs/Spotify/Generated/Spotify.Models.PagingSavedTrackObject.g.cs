@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PagingObject PickPagingObject() => IsPagingObject
-            ? PagingObject!
+        public global::Spotify.PagingObject PickPagingObject() => PagingObject is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingObject' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PagingSavedTrackObjectVariant2 PickPagingSavedTrackObjectVariant2() => IsPagingSavedTrackObjectVariant2
-            ? PagingSavedTrackObjectVariant2!
+        public global::Spotify.PagingSavedTrackObjectVariant2 PickPagingSavedTrackObjectVariant2() => PagingSavedTrackObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingSavedTrackObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject && pagingObject != null)
+            if (PagingObject is { } __value0 && pagingObject != null)
             {
-                return pagingObject(PagingObject!);
+                return pagingObject(__value0);
             }
-            else if (IsPagingSavedTrackObjectVariant2 && pagingSavedTrackObjectVariant2 != null)
+            else if (PagingSavedTrackObjectVariant2 is { } __value1 && pagingSavedTrackObjectVariant2 != null)
             {
-                return pagingSavedTrackObjectVariant2(PagingSavedTrackObjectVariant2!);
+                return pagingSavedTrackObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject)
+            if (PagingObject is { } __value0)
             {
-                pagingObject?.Invoke(PagingObject!);
+                pagingObject?.Invoke(__value0);
             }
-            else if (IsPagingSavedTrackObjectVariant2)
+            else if (PagingSavedTrackObjectVariant2 is { } __value1)
             {
-                pagingSavedTrackObjectVariant2?.Invoke(PagingSavedTrackObjectVariant2!);
+                pagingSavedTrackObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject)
+            if (PagingObject is { } __value0)
             {
-                pagingObject?.Invoke(PagingObject!);
+                pagingObject?.Invoke(__value0);
             }
-            else if (IsPagingSavedTrackObjectVariant2)
+            else if (PagingSavedTrackObjectVariant2 is { } __value1)
             {
-                pagingSavedTrackObjectVariant2?.Invoke(PagingSavedTrackObjectVariant2!);
+                pagingSavedTrackObjectVariant2?.Invoke(__value1);
             }
         }
 

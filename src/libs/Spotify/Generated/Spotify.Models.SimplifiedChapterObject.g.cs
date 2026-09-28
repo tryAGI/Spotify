@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ChapterBase PickBase() => IsBase
-            ? Base!
+        public global::Spotify.ChapterBase PickBase() => Base is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public object PickSimplifiedChapterObjectVariant2() => IsSimplifiedChapterObjectVariant2
-            ? SimplifiedChapterObjectVariant2!
+        public object PickSimplifiedChapterObjectVariant2() => SimplifiedChapterObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SimplifiedChapterObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsBase && @base != null)
+            if (Base is { } __value0 && @base != null)
             {
-                return @base(Base!);
+                return @base(__value0);
             }
-            else if (IsSimplifiedChapterObjectVariant2 && simplifiedChapterObjectVariant2 != null)
+            else if (SimplifiedChapterObjectVariant2 is { } __value1 && simplifiedChapterObjectVariant2 != null)
             {
-                return simplifiedChapterObjectVariant2(SimplifiedChapterObjectVariant2!);
+                return simplifiedChapterObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsBase)
+            if (Base is { } __value0)
             {
-                @base?.Invoke(Base!);
+                @base?.Invoke(__value0);
             }
-            else if (IsSimplifiedChapterObjectVariant2)
+            else if (SimplifiedChapterObjectVariant2 is { } __value1)
             {
-                simplifiedChapterObjectVariant2?.Invoke(SimplifiedChapterObjectVariant2!);
+                simplifiedChapterObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsBase)
+            if (Base is { } __value0)
             {
-                @base?.Invoke(Base!);
+                @base?.Invoke(__value0);
             }
-            else if (IsSimplifiedChapterObjectVariant2)
+            else if (SimplifiedChapterObjectVariant2 is { } __value1)
             {
-                simplifiedChapterObjectVariant2?.Invoke(SimplifiedChapterObjectVariant2!);
+                simplifiedChapterObjectVariant2?.Invoke(__value1);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SimplifiedAlbumObject PickSimplified() => IsSimplified
-            ? Simplified!.Value
+        public global::Spotify.SimplifiedAlbumObject PickSimplified() => Simplified is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Simplified' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ArtistDiscographyAlbumObjectVariant2 PickArtistDiscographyAlbumObjectVariant2() => IsArtistDiscographyAlbumObjectVariant2
-            ? ArtistDiscographyAlbumObjectVariant2!
+        public global::Spotify.ArtistDiscographyAlbumObjectVariant2 PickArtistDiscographyAlbumObjectVariant2() => ArtistDiscographyAlbumObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ArtistDiscographyAlbumObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsSimplified && simplified != null)
+            if (Simplified is { } __value0 && simplified != null)
             {
-                return simplified(Simplified!);
+                return simplified(__value0);
             }
-            else if (IsArtistDiscographyAlbumObjectVariant2 && artistDiscographyAlbumObjectVariant2 != null)
+            else if (ArtistDiscographyAlbumObjectVariant2 is { } __value1 && artistDiscographyAlbumObjectVariant2 != null)
             {
-                return artistDiscographyAlbumObjectVariant2(ArtistDiscographyAlbumObjectVariant2!);
+                return artistDiscographyAlbumObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsSimplified)
+            if (Simplified is { } __value0)
             {
-                simplified?.Invoke(Simplified!);
+                simplified?.Invoke(__value0);
             }
-            else if (IsArtistDiscographyAlbumObjectVariant2)
+            else if (ArtistDiscographyAlbumObjectVariant2 is { } __value1)
             {
-                artistDiscographyAlbumObjectVariant2?.Invoke(ArtistDiscographyAlbumObjectVariant2!);
+                artistDiscographyAlbumObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsSimplified)
+            if (Simplified is { } __value0)
             {
-                simplified?.Invoke(Simplified!);
+                simplified?.Invoke(__value0);
             }
-            else if (IsArtistDiscographyAlbumObjectVariant2)
+            else if (ArtistDiscographyAlbumObjectVariant2 is { } __value1)
             {
-                artistDiscographyAlbumObjectVariant2?.Invoke(ArtistDiscographyAlbumObjectVariant2!);
+                artistDiscographyAlbumObjectVariant2?.Invoke(__value1);
             }
         }
 
