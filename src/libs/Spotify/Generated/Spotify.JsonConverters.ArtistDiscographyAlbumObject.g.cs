@@ -70,7 +70,7 @@ namespace Spotify.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Spotify.SimplifiedAlbumObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Spotify.SimplifiedAlbumObject> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Spotify.SimplifiedAlbumObject).Name}");
-                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.Simplified!.Value, typeInfo);
+                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickSimplified(), typeInfo);
                 if (__element0.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");
@@ -88,7 +88,7 @@ namespace Spotify.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Spotify.ArtistDiscographyAlbumObjectVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Spotify.ArtistDiscographyAlbumObjectVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Spotify.ArtistDiscographyAlbumObjectVariant2).Name}");
-                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.ArtistDiscographyAlbumObjectVariant2!, typeInfo);
+                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickArtistDiscographyAlbumObjectVariant2(), typeInfo);
                 if (__element1.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");

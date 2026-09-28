@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PlaylistUserObject PickUser() => IsUser
-            ? User!
+        public global::Spotify.PlaylistUserObject PickUser() => User is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'User' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PlaylistOwnerObjectVariant2 PickPlaylistOwnerObjectVariant2() => IsPlaylistOwnerObjectVariant2
-            ? PlaylistOwnerObjectVariant2!
+        public global::Spotify.PlaylistOwnerObjectVariant2 PickPlaylistOwnerObjectVariant2() => PlaylistOwnerObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PlaylistOwnerObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsUser && user != null)
+            if (User is { } __value0 && user != null)
             {
-                return user(User!);
+                return user(__value0);
             }
-            else if (IsPlaylistOwnerObjectVariant2 && playlistOwnerObjectVariant2 != null)
+            else if (PlaylistOwnerObjectVariant2 is { } __value1 && playlistOwnerObjectVariant2 != null)
             {
-                return playlistOwnerObjectVariant2(PlaylistOwnerObjectVariant2!);
+                return playlistOwnerObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsUser)
+            if (User is { } __value0)
             {
-                user?.Invoke(User!);
+                user?.Invoke(__value0);
             }
-            else if (IsPlaylistOwnerObjectVariant2)
+            else if (PlaylistOwnerObjectVariant2 is { } __value1)
             {
-                playlistOwnerObjectVariant2?.Invoke(PlaylistOwnerObjectVariant2!);
+                playlistOwnerObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsUser)
+            if (User is { } __value0)
             {
-                user?.Invoke(User!);
+                user?.Invoke(__value0);
             }
-            else if (IsPlaylistOwnerObjectVariant2)
+            else if (PlaylistOwnerObjectVariant2 is { } __value1)
             {
-                playlistOwnerObjectVariant2?.Invoke(PlaylistOwnerObjectVariant2!);
+                playlistOwnerObjectVariant2?.Invoke(__value1);
             }
         }
 

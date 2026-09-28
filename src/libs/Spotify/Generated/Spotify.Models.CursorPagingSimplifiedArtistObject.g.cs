@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CursorPagingObject PickCursorPagingObject() => IsCursorPagingObject
-            ? CursorPagingObject!
+        public global::Spotify.CursorPagingObject PickCursorPagingObject() => CursorPagingObject is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CursorPagingObject' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CursorPagingSimplifiedArtistObjectVariant2 PickCursorPagingSimplifiedArtistObjectVariant2() => IsCursorPagingSimplifiedArtistObjectVariant2
-            ? CursorPagingSimplifiedArtistObjectVariant2!
+        public global::Spotify.CursorPagingSimplifiedArtistObjectVariant2 PickCursorPagingSimplifiedArtistObjectVariant2() => CursorPagingSimplifiedArtistObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CursorPagingSimplifiedArtistObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsCursorPagingObject && cursorPagingObject != null)
+            if (CursorPagingObject is { } __value0 && cursorPagingObject != null)
             {
-                return cursorPagingObject(CursorPagingObject!);
+                return cursorPagingObject(__value0);
             }
-            else if (IsCursorPagingSimplifiedArtistObjectVariant2 && cursorPagingSimplifiedArtistObjectVariant2 != null)
+            else if (CursorPagingSimplifiedArtistObjectVariant2 is { } __value1 && cursorPagingSimplifiedArtistObjectVariant2 != null)
             {
-                return cursorPagingSimplifiedArtistObjectVariant2(CursorPagingSimplifiedArtistObjectVariant2!);
+                return cursorPagingSimplifiedArtistObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsCursorPagingObject)
+            if (CursorPagingObject is { } __value0)
             {
-                cursorPagingObject?.Invoke(CursorPagingObject!);
+                cursorPagingObject?.Invoke(__value0);
             }
-            else if (IsCursorPagingSimplifiedArtistObjectVariant2)
+            else if (CursorPagingSimplifiedArtistObjectVariant2 is { } __value1)
             {
-                cursorPagingSimplifiedArtistObjectVariant2?.Invoke(CursorPagingSimplifiedArtistObjectVariant2!);
+                cursorPagingSimplifiedArtistObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsCursorPagingObject)
+            if (CursorPagingObject is { } __value0)
             {
-                cursorPagingObject?.Invoke(CursorPagingObject!);
+                cursorPagingObject?.Invoke(__value0);
             }
-            else if (IsCursorPagingSimplifiedArtistObjectVariant2)
+            else if (CursorPagingSimplifiedArtistObjectVariant2 is { } __value1)
             {
-                cursorPagingSimplifiedArtistObjectVariant2?.Invoke(CursorPagingSimplifiedArtistObjectVariant2!);
+                cursorPagingSimplifiedArtistObjectVariant2?.Invoke(__value1);
             }
         }
 

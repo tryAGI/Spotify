@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PagingObject PickPagingObject() => IsPagingObject
-            ? PagingObject!
+        public global::Spotify.PagingObject PickPagingObject() => PagingObject is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingObject' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PagingSimplifiedAudiobookObjectVariant2 PickPagingSimplifiedAudiobookObjectVariant2() => IsPagingSimplifiedAudiobookObjectVariant2
-            ? PagingSimplifiedAudiobookObjectVariant2!
+        public global::Spotify.PagingSimplifiedAudiobookObjectVariant2 PickPagingSimplifiedAudiobookObjectVariant2() => PagingSimplifiedAudiobookObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingSimplifiedAudiobookObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject && pagingObject != null)
+            if (PagingObject is { } __value0 && pagingObject != null)
             {
-                return pagingObject(PagingObject!);
+                return pagingObject(__value0);
             }
-            else if (IsPagingSimplifiedAudiobookObjectVariant2 && pagingSimplifiedAudiobookObjectVariant2 != null)
+            else if (PagingSimplifiedAudiobookObjectVariant2 is { } __value1 && pagingSimplifiedAudiobookObjectVariant2 != null)
             {
-                return pagingSimplifiedAudiobookObjectVariant2(PagingSimplifiedAudiobookObjectVariant2!);
+                return pagingSimplifiedAudiobookObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject)
+            if (PagingObject is { } __value0)
             {
-                pagingObject?.Invoke(PagingObject!);
+                pagingObject?.Invoke(__value0);
             }
-            else if (IsPagingSimplifiedAudiobookObjectVariant2)
+            else if (PagingSimplifiedAudiobookObjectVariant2 is { } __value1)
             {
-                pagingSimplifiedAudiobookObjectVariant2?.Invoke(PagingSimplifiedAudiobookObjectVariant2!);
+                pagingSimplifiedAudiobookObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject)
+            if (PagingObject is { } __value0)
             {
-                pagingObject?.Invoke(PagingObject!);
+                pagingObject?.Invoke(__value0);
             }
-            else if (IsPagingSimplifiedAudiobookObjectVariant2)
+            else if (PagingSimplifiedAudiobookObjectVariant2 is { } __value1)
             {
-                pagingSimplifiedAudiobookObjectVariant2?.Invoke(PagingSimplifiedAudiobookObjectVariant2!);
+                pagingSimplifiedAudiobookObjectVariant2?.Invoke(__value1);
             }
         }
 

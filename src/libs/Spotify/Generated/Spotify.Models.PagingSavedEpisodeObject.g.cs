@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PagingObject PickPagingObject() => IsPagingObject
-            ? PagingObject!
+        public global::Spotify.PagingObject PickPagingObject() => PagingObject is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingObject' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.PagingSavedEpisodeObjectVariant2 PickPagingSavedEpisodeObjectVariant2() => IsPagingSavedEpisodeObjectVariant2
-            ? PagingSavedEpisodeObjectVariant2!
+        public global::Spotify.PagingSavedEpisodeObjectVariant2 PickPagingSavedEpisodeObjectVariant2() => PagingSavedEpisodeObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PagingSavedEpisodeObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject && pagingObject != null)
+            if (PagingObject is { } __value0 && pagingObject != null)
             {
-                return pagingObject(PagingObject!);
+                return pagingObject(__value0);
             }
-            else if (IsPagingSavedEpisodeObjectVariant2 && pagingSavedEpisodeObjectVariant2 != null)
+            else if (PagingSavedEpisodeObjectVariant2 is { } __value1 && pagingSavedEpisodeObjectVariant2 != null)
             {
-                return pagingSavedEpisodeObjectVariant2(PagingSavedEpisodeObjectVariant2!);
+                return pagingSavedEpisodeObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject)
+            if (PagingObject is { } __value0)
             {
-                pagingObject?.Invoke(PagingObject!);
+                pagingObject?.Invoke(__value0);
             }
-            else if (IsPagingSavedEpisodeObjectVariant2)
+            else if (PagingSavedEpisodeObjectVariant2 is { } __value1)
             {
-                pagingSavedEpisodeObjectVariant2?.Invoke(PagingSavedEpisodeObjectVariant2!);
+                pagingSavedEpisodeObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsPagingObject)
+            if (PagingObject is { } __value0)
             {
-                pagingObject?.Invoke(PagingObject!);
+                pagingObject?.Invoke(__value0);
             }
-            else if (IsPagingSavedEpisodeObjectVariant2)
+            else if (PagingSavedEpisodeObjectVariant2 is { } __value1)
             {
-                pagingSavedEpisodeObjectVariant2?.Invoke(PagingSavedEpisodeObjectVariant2!);
+                pagingSavedEpisodeObjectVariant2?.Invoke(__value1);
             }
         }
 

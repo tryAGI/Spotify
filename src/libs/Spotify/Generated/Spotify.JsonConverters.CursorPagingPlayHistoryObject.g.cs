@@ -70,7 +70,7 @@ namespace Spotify.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Spotify.CursorPagingObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Spotify.CursorPagingObject?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Spotify.CursorPagingObject).Name}");
-                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.CursorPagingObject!, typeInfo);
+                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickCursorPagingObject(), typeInfo);
                 if (__element0.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");
@@ -88,7 +88,7 @@ namespace Spotify.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Spotify.CursorPagingPlayHistoryObjectVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Spotify.CursorPagingPlayHistoryObjectVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Spotify.CursorPagingPlayHistoryObjectVariant2).Name}");
-                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.CursorPagingPlayHistoryObjectVariant2!, typeInfo);
+                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickCursorPagingPlayHistoryObjectVariant2(), typeInfo);
                 if (__element1.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");

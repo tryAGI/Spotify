@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CursorPagingObject PickCursorPagingObject() => IsCursorPagingObject
-            ? CursorPagingObject!
+        public global::Spotify.CursorPagingObject PickCursorPagingObject() => CursorPagingObject is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CursorPagingObject' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CursorPagingPlayHistoryObjectVariant2 PickCursorPagingPlayHistoryObjectVariant2() => IsCursorPagingPlayHistoryObjectVariant2
-            ? CursorPagingPlayHistoryObjectVariant2!
+        public global::Spotify.CursorPagingPlayHistoryObjectVariant2 PickCursorPagingPlayHistoryObjectVariant2() => CursorPagingPlayHistoryObjectVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CursorPagingPlayHistoryObjectVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsCursorPagingObject && cursorPagingObject != null)
+            if (CursorPagingObject is { } __value0 && cursorPagingObject != null)
             {
-                return cursorPagingObject(CursorPagingObject!);
+                return cursorPagingObject(__value0);
             }
-            else if (IsCursorPagingPlayHistoryObjectVariant2 && cursorPagingPlayHistoryObjectVariant2 != null)
+            else if (CursorPagingPlayHistoryObjectVariant2 is { } __value1 && cursorPagingPlayHistoryObjectVariant2 != null)
             {
-                return cursorPagingPlayHistoryObjectVariant2(CursorPagingPlayHistoryObjectVariant2!);
+                return cursorPagingPlayHistoryObjectVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsCursorPagingObject)
+            if (CursorPagingObject is { } __value0)
             {
-                cursorPagingObject?.Invoke(CursorPagingObject!);
+                cursorPagingObject?.Invoke(__value0);
             }
-            else if (IsCursorPagingPlayHistoryObjectVariant2)
+            else if (CursorPagingPlayHistoryObjectVariant2 is { } __value1)
             {
-                cursorPagingPlayHistoryObjectVariant2?.Invoke(CursorPagingPlayHistoryObjectVariant2!);
+                cursorPagingPlayHistoryObjectVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsCursorPagingObject)
+            if (CursorPagingObject is { } __value0)
             {
-                cursorPagingObject?.Invoke(CursorPagingObject!);
+                cursorPagingObject?.Invoke(__value0);
             }
-            else if (IsCursorPagingPlayHistoryObjectVariant2)
+            else if (CursorPagingPlayHistoryObjectVariant2 is { } __value1)
             {
-                cursorPagingPlayHistoryObjectVariant2?.Invoke(CursorPagingPlayHistoryObjectVariant2!);
+                cursorPagingPlayHistoryObjectVariant2?.Invoke(__value1);
             }
         }
 

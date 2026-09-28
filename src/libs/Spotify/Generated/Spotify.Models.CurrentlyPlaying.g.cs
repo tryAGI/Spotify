@@ -42,8 +42,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.TrackObject PickTrack() => IsTrack
-            ? Track!
+        public global::Spotify.TrackObject PickTrack() => Track is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Track' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.EpisodeObject PickEpisodeObject() => IsEpisodeObject
-            ? EpisodeObject!.Value
+        public global::Spotify.EpisodeObject PickEpisodeObject() => EpisodeObject is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EpisodeObject' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsTrack && track != null)
+            if (Track is { } __value0 && track != null)
             {
-                return track(Track!);
+                return track(__value0);
             }
-            else if (IsEpisodeObject && episodeObject != null)
+            else if (EpisodeObject is { } __value1 && episodeObject != null)
             {
-                return episodeObject(EpisodeObject!);
+                return episodeObject(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsTrack)
+            if (Track is { } __value0)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value0);
             }
-            else if (IsEpisodeObject)
+            else if (EpisodeObject is { } __value1)
             {
-                episodeObject?.Invoke(EpisodeObject!);
+                episodeObject?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Spotify
                 Validate();
             }
 
-            if (IsTrack)
+            if (Track is { } __value0)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value0);
             }
-            else if (IsEpisodeObject)
+            else if (EpisodeObject is { } __value1)
             {
-                episodeObject?.Invoke(EpisodeObject!);
+                episodeObject?.Invoke(__value1);
             }
         }
 

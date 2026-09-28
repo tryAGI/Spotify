@@ -146,13 +146,13 @@ namespace Spotify.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Spotify.TrackObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Spotify.TrackObject?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Spotify.TrackObject).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Track!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrack(), typeInfo);
             }
             else if (value.IsEpisodeObject)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Spotify.EpisodeObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Spotify.EpisodeObject> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Spotify.EpisodeObject).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EpisodeObject!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEpisodeObject(), typeInfo);
             }
         }
     }
