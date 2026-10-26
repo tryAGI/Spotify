@@ -17,6 +17,7 @@ namespace Spotify
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.LinkedTrackObject))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.ExternalUrlObject))]
@@ -523,7 +524,6 @@ namespace Spotify
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.TransferAUsersPlaybackResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.TransferAUsersPlaybackResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Spotify.DeviceObject>))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -535,6 +535,7 @@ namespace Spotify
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Spotify.DeviceObject>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Spotify.GetAUsersAvailableDevicesResponse4))]
