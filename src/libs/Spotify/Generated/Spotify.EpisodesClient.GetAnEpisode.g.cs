@@ -404,19 +404,19 @@ namespace Spotify
                             {
                                 string? __content_403 = null;
                                 global::System.Exception? __exception_403 = null;
-                                global::Spotify.GetAnEpisodeResponse2? __value_403 = null;
+                                global::Spotify.GetAnEpisodeResponse? __value_403 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_403 = global::Spotify.GetAnEpisodeResponse2.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = global::Spotify.GetAnEpisodeResponse.FromJson(__content_403, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_403 = global::Spotify.GetAnEpisodeResponse2.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = global::Spotify.GetAnEpisodeResponse.FromJson(__content_403, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -425,7 +425,7 @@ namespace Spotify
                                 }
 
 
-                                throw global::Spotify.ApiException<global::Spotify.GetAnEpisodeResponse2>.Create(
+                                throw global::Spotify.ApiException<global::Spotify.GetAnEpisodeResponse>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
@@ -441,19 +441,19 @@ namespace Spotify
                             {
                                 string? __content_429 = null;
                                 global::System.Exception? __exception_429 = null;
-                                global::Spotify.GetAnEpisodeResponse3? __value_429 = null;
+                                global::Spotify.GetAnEpisodeResponse? __value_429 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_429 = global::Spotify.GetAnEpisodeResponse3.FromJson(__content_429, JsonSerializerContext);
+                                        __value_429 = global::Spotify.GetAnEpisodeResponse.FromJson(__content_429, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_429 = global::Spotify.GetAnEpisodeResponse3.FromJson(__content_429, JsonSerializerContext);
+                                        __value_429 = global::Spotify.GetAnEpisodeResponse.FromJson(__content_429, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -462,7 +462,7 @@ namespace Spotify
                                 }
 
 
-                                throw global::Spotify.ApiException<global::Spotify.GetAnEpisodeResponse3>.Create(
+                                throw global::Spotify.ApiException<global::Spotify.GetAnEpisodeResponse>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_429,
