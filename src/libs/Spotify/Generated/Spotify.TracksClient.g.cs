@@ -41,7 +41,7 @@ namespace Spotify
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
-            get => JsonSerializerContextProvider?.Value ?? global::Spotify.TracksSourceGenerationContext.Default;
+            get => JsonSerializerContextProvider?.Value ?? global::Spotify.SourceGenerationContext.Default;
             set => JsonSerializerContextProvider = new(() => value);
         }
 

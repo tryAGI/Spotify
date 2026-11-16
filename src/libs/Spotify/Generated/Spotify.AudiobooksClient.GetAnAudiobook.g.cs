@@ -404,19 +404,19 @@ namespace Spotify
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::Spotify.GetAnAudiobookResponse2? __value_401 = null;
+                                global::Spotify.GetAnAudiobookResponse? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::Spotify.GetAnAudiobookResponse2.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::Spotify.GetAnAudiobookResponse2.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -425,7 +425,7 @@ namespace Spotify
                                 }
 
 
-                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse2>.Create(
+                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
@@ -441,19 +441,19 @@ namespace Spotify
                             {
                                 string? __content_403 = null;
                                 global::System.Exception? __exception_403 = null;
-                                global::Spotify.GetAnAudiobookResponse3? __value_403 = null;
+                                global::Spotify.GetAnAudiobookResponse? __value_403 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_403 = global::Spotify.GetAnAudiobookResponse3.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_403, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_403 = global::Spotify.GetAnAudiobookResponse3.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_403, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -462,7 +462,7 @@ namespace Spotify
                                 }
 
 
-                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse3>.Create(
+                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
@@ -478,19 +478,19 @@ namespace Spotify
                             {
                                 string? __content_404 = null;
                                 global::System.Exception? __exception_404 = null;
-                                global::Spotify.GetAnAudiobookResponse4? __value_404 = null;
+                                global::Spotify.GetAnAudiobookResponse? __value_404 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::Spotify.GetAnAudiobookResponse4.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_404 = global::Spotify.GetAnAudiobookResponse4.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -499,7 +499,7 @@ namespace Spotify
                                 }
 
 
-                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse4>.Create(
+                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
@@ -515,19 +515,19 @@ namespace Spotify
                             {
                                 string? __content_429 = null;
                                 global::System.Exception? __exception_429 = null;
-                                global::Spotify.GetAnAudiobookResponse5? __value_429 = null;
+                                global::Spotify.GetAnAudiobookResponse? __value_429 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_429 = global::Spotify.GetAnAudiobookResponse5.FromJson(__content_429, JsonSerializerContext);
+                                        __value_429 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_429, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_429 = global::Spotify.GetAnAudiobookResponse5.FromJson(__content_429, JsonSerializerContext);
+                                        __value_429 = global::Spotify.GetAnAudiobookResponse.FromJson(__content_429, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -536,7 +536,7 @@ namespace Spotify
                                 }
 
 
-                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse5>.Create(
+                                throw global::Spotify.ApiException<global::Spotify.GetAnAudiobookResponse>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_429,

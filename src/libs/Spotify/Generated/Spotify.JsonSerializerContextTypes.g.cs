@@ -882,1315 +882,731 @@ namespace Spotify
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAlbumResponse2? Type211 { get; set; }
+        public global::Spotify.GetMultipleAlbumsResponse? Type211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAlbumResponse3? Type212 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.AlbumObject>? Type212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAlbumsResponse? Type213 { get; set; }
+        public global::Spotify.GetMultipleAlbumsResponse2? Type213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.AlbumObject>? Type214 { get; set; }
+        public global::Spotify.GetMultipleAlbumsResponse3? Type214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAlbumsResponse2? Type215 { get; set; }
+        public global::Spotify.GetMultipleAlbumsResponse4? Type215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAlbumsResponse3? Type216 { get; set; }
+        public global::Spotify.GetAnAlbumsTracksResponse? Type216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAlbumsResponse4? Type217 { get; set; }
+        public global::Spotify.GetAnArtistResponse? Type217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAlbumsTracksResponse? Type218 { get; set; }
+        public global::Spotify.GetMultipleArtistsResponse? Type218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAlbumsTracksResponse2? Type219 { get; set; }
+        public global::Spotify.GetMultipleArtistsResponse2? Type219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAlbumsTracksResponse3? Type220 { get; set; }
+        public global::Spotify.GetMultipleArtistsResponse3? Type220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistResponse? Type221 { get; set; }
+        public global::Spotify.GetMultipleArtistsResponse4? Type221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistResponse2? Type222 { get; set; }
+        public global::Spotify.GetAnArtistsAlbumsResponse? Type222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistResponse3? Type223 { get; set; }
+        public global::Spotify.GetAnArtistsTopTracksResponse? Type223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleArtistsResponse? Type224 { get; set; }
+        public global::Spotify.GetAnArtistsTopTracksResponse2? Type224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleArtistsResponse2? Type225 { get; set; }
+        public global::Spotify.GetAnArtistsTopTracksResponse3? Type225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleArtistsResponse3? Type226 { get; set; }
+        public global::Spotify.GetAnArtistsTopTracksResponse4? Type226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleArtistsResponse4? Type227 { get; set; }
+        public global::Spotify.GetAnArtistsRelatedArtistsResponse? Type227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsAlbumsResponse? Type228 { get; set; }
+        public global::Spotify.GetAnArtistsRelatedArtistsResponse2? Type228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsAlbumsResponse2? Type229 { get; set; }
+        public global::Spotify.GetAnArtistsRelatedArtistsResponse3? Type229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsAlbumsResponse3? Type230 { get; set; }
+        public global::Spotify.GetAnArtistsRelatedArtistsResponse4? Type230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsTopTracksResponse? Type231 { get; set; }
+        public global::Spotify.GetAShowResponse? Type231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsTopTracksResponse2? Type232 { get; set; }
+        public global::Spotify.GetMultipleShowsResponse? Type232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsTopTracksResponse3? Type233 { get; set; }
+        public global::Spotify.GetMultipleShowsResponse2? Type233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsTopTracksResponse4? Type234 { get; set; }
+        public global::Spotify.GetMultipleShowsResponse3? Type234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsRelatedArtistsResponse? Type235 { get; set; }
+        public global::Spotify.GetMultipleShowsResponse4? Type235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsRelatedArtistsResponse2? Type236 { get; set; }
+        public global::Spotify.GetAShowsEpisodesResponse? Type236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsRelatedArtistsResponse3? Type237 { get; set; }
+        public global::Spotify.GetAnEpisodeResponse? Type237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnArtistsRelatedArtistsResponse4? Type238 { get; set; }
+        public global::Spotify.GetMultipleEpisodesResponse? Type238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAShowResponse? Type239 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.EpisodeObject>? Type239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAShowResponse2? Type240 { get; set; }
+        public global::Spotify.GetMultipleEpisodesResponse2? Type240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAShowResponse3? Type241 { get; set; }
+        public global::Spotify.GetMultipleEpisodesResponse3? Type241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleShowsResponse? Type242 { get; set; }
+        public global::Spotify.GetMultipleEpisodesResponse4? Type242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleShowsResponse2? Type243 { get; set; }
+        public global::Spotify.GetAnAudiobookResponse? Type243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleShowsResponse3? Type244 { get; set; }
+        public global::Spotify.GetMultipleAudiobooksResponse? Type244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleShowsResponse4? Type245 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.AudiobookObject>? Type245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAShowsEpisodesResponse? Type246 { get; set; }
+        public global::Spotify.GetMultipleAudiobooksResponse2? Type246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAShowsEpisodesResponse2? Type247 { get; set; }
+        public global::Spotify.GetMultipleAudiobooksResponse3? Type247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAShowsEpisodesResponse3? Type248 { get; set; }
+        public global::Spotify.GetMultipleAudiobooksResponse4? Type248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnEpisodeResponse? Type249 { get; set; }
+        public global::Spotify.GetAudiobookChaptersResponse? Type249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnEpisodeResponse2? Type250 { get; set; }
+        public global::Spotify.GetUsersSavedAudiobooksResponse? Type250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnEpisodeResponse3? Type251 { get; set; }
+        public global::Spotify.SaveAudiobooksUserResponse? Type251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleEpisodesResponse? Type252 { get; set; }
+        public global::Spotify.RemoveAudiobooksUserResponse? Type252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.EpisodeObject>? Type253 { get; set; }
+        public global::System.Collections.Generic.IList<bool>? Type253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleEpisodesResponse2? Type254 { get; set; }
+        public global::Spotify.CheckUsersSavedAudiobooksResponse? Type254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleEpisodesResponse3? Type255 { get; set; }
+        public global::Spotify.GetAChapterResponse? Type255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleEpisodesResponse4? Type256 { get; set; }
+        public global::Spotify.GetSeveralChaptersResponse? Type256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAudiobookResponse? Type257 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.ChapterObject>? Type257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAudiobookResponse2? Type258 { get; set; }
+        public global::Spotify.GetSeveralChaptersResponse2? Type258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAudiobookResponse3? Type259 { get; set; }
+        public global::Spotify.GetSeveralChaptersResponse3? Type259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAudiobookResponse4? Type260 { get; set; }
+        public global::Spotify.GetSeveralChaptersResponse4? Type260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAnAudiobookResponse5? Type261 { get; set; }
+        public global::Spotify.GetTrackResponse? Type261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAudiobooksResponse? Type262 { get; set; }
+        public global::Spotify.GetSeveralTracksResponse? Type262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.AudiobookObject>? Type263 { get; set; }
+        public global::Spotify.GetSeveralTracksResponse2? Type263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAudiobooksResponse2? Type264 { get; set; }
+        public global::Spotify.GetSeveralTracksResponse3? Type264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAudiobooksResponse3? Type265 { get; set; }
+        public global::Spotify.GetSeveralTracksResponse4? Type265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetMultipleAudiobooksResponse4? Type266 { get; set; }
+        public global::Spotify.SearchResponse? Type266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAudiobookChaptersResponse? Type267 { get; set; }
+        public global::Spotify.SearchResponse2? Type267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAudiobookChaptersResponse2? Type268 { get; set; }
+        public global::Spotify.SearchResponse3? Type268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAudiobookChaptersResponse3? Type269 { get; set; }
+        public global::Spotify.SearchResponse4? Type269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedAudiobooksResponse? Type270 { get; set; }
+        public global::Spotify.GetCurrentUsersProfileResponse? Type270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedAudiobooksResponse2? Type271 { get; set; }
+        public global::Spotify.GetPlaylistResponse? Type271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedAudiobooksResponse3? Type272 { get; set; }
+        public global::Spotify.ChangePlaylistDetailsResponse? Type272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveAudiobooksUserResponse? Type273 { get; set; }
+        public global::Spotify.GetPlaylistsTracksResponse? Type273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveAudiobooksUserResponse2? Type274 { get; set; }
+        public global::Spotify.AddTracksToPlaylistResponse? Type274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveAudiobooksUserResponse3? Type275 { get; set; }
+        public global::Spotify.AddTracksToPlaylistResponse2? Type275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveAudiobooksUserResponse? Type276 { get; set; }
+        public global::Spotify.AddTracksToPlaylistResponse3? Type276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveAudiobooksUserResponse2? Type277 { get; set; }
+        public global::Spotify.AddTracksToPlaylistResponse4? Type277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveAudiobooksUserResponse3? Type278 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse? Type278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<bool>? Type279 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse2? Type279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedAudiobooksResponse? Type280 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse3? Type280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedAudiobooksResponse2? Type281 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse4? Type281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedAudiobooksResponse3? Type282 { get; set; }
+        public global::Spotify.RemoveTracksPlaylistResponse? Type282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAChapterResponse? Type283 { get; set; }
+        public global::Spotify.RemoveTracksPlaylistResponse2? Type283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAChapterResponse2? Type284 { get; set; }
+        public global::Spotify.RemoveTracksPlaylistResponse3? Type284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAChapterResponse3? Type285 { get; set; }
+        public global::Spotify.RemoveTracksPlaylistResponse4? Type285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralChaptersResponse? Type286 { get; set; }
+        public global::Spotify.GetPlaylistsItemsResponse? Type286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.ChapterObject>? Type287 { get; set; }
+        public global::Spotify.AddItemsToPlaylistResponse? Type287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralChaptersResponse2? Type288 { get; set; }
+        public global::Spotify.AddItemsToPlaylistResponse2? Type288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralChaptersResponse3? Type289 { get; set; }
+        public global::Spotify.AddItemsToPlaylistResponse3? Type289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralChaptersResponse4? Type290 { get; set; }
+        public global::Spotify.AddItemsToPlaylistResponse4? Type290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetTrackResponse? Type291 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse? Type291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetTrackResponse2? Type292 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse2? Type292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetTrackResponse3? Type293 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse3? Type293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralTracksResponse? Type294 { get; set; }
+        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse4? Type294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralTracksResponse2? Type295 { get; set; }
+        public global::Spotify.RemoveItemsPlaylistResponse? Type295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralTracksResponse3? Type296 { get; set; }
+        public global::Spotify.RemoveItemsPlaylistResponse2? Type296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetSeveralTracksResponse4? Type297 { get; set; }
+        public global::Spotify.RemoveItemsPlaylistResponse3? Type297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SearchResponse? Type298 { get; set; }
+        public global::Spotify.RemoveItemsPlaylistResponse4? Type298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SearchResponse2? Type299 { get; set; }
+        public global::Spotify.GetAListOfCurrentUsersPlaylistsResponse? Type299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SearchResponse3? Type300 { get; set; }
+        public global::Spotify.CreatePlaylistResponse? Type300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SearchResponse4? Type301 { get; set; }
+        public global::Spotify.SaveLibraryItemsResponse? Type301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetCurrentUsersProfileResponse? Type302 { get; set; }
+        public global::Spotify.RemoveLibraryItemsResponse? Type302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetCurrentUsersProfileResponse2? Type303 { get; set; }
+        public global::Spotify.CheckLibraryContainsResponse? Type303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetCurrentUsersProfileResponse3? Type304 { get; set; }
+        public global::Spotify.GetUsersSavedAlbumsResponse? Type304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistResponse? Type305 { get; set; }
+        public global::Spotify.SaveAlbumsUserResponse? Type305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistResponse2? Type306 { get; set; }
+        public global::Spotify.RemoveAlbumsUserResponse? Type306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistResponse3? Type307 { get; set; }
+        public global::Spotify.CheckUsersSavedAlbumsResponse? Type307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ChangePlaylistDetailsResponse? Type308 { get; set; }
+        public global::Spotify.GetUsersSavedTracksResponse? Type308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ChangePlaylistDetailsResponse2? Type309 { get; set; }
+        public global::Spotify.SaveTracksUserResponse? Type309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ChangePlaylistDetailsResponse3? Type310 { get; set; }
+        public global::Spotify.RemoveTracksUserResponse? Type310 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistsTracksResponse? Type311 { get; set; }
+        public global::Spotify.CheckUsersSavedTracksResponse? Type311 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistsTracksResponse2? Type312 { get; set; }
+        public global::Spotify.GetUsersSavedEpisodesResponse? Type312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistsTracksResponse3? Type313 { get; set; }
+        public global::Spotify.SaveEpisodesUserResponse? Type313 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddTracksToPlaylistResponse? Type314 { get; set; }
+        public global::Spotify.RemoveEpisodesUserResponse? Type314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddTracksToPlaylistResponse2? Type315 { get; set; }
+        public global::Spotify.CheckUsersSavedEpisodesResponse? Type315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddTracksToPlaylistResponse3? Type316 { get; set; }
+        public global::Spotify.GetUsersSavedShowsResponse? Type316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddTracksToPlaylistResponse4? Type317 { get; set; }
+        public global::Spotify.SaveShowsUserResponse? Type317 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse? Type318 { get; set; }
+        public global::Spotify.RemoveShowsUserResponse? Type318 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse2? Type319 { get; set; }
+        public global::Spotify.CheckUsersSavedShowsResponse? Type319 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse3? Type320 { get; set; }
+        public global::Spotify.AllOf<global::Spotify.PagingObject, global::Spotify.GetUsersTopArtistsAndTracksResponse2>? Type320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsTracksResponse4? Type321 { get; set; }
+        public global::Spotify.GetUsersTopArtistsAndTracksResponse2? Type321 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveTracksPlaylistResponse? Type322 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.GetUsersTopArtistsAndTracksResponseItem>? Type322 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveTracksPlaylistResponse2? Type323 { get; set; }
+        public global::Spotify.GetUsersTopArtistsAndTracksResponseItem? Type323 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveTracksPlaylistResponse3? Type324 { get; set; }
+        public global::Spotify.GetUsersTopArtistsAndTracksResponseItemDiscriminator? Type324 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveTracksPlaylistResponse4? Type325 { get; set; }
+        public global::Spotify.GetUsersTopArtistsAndTracksResponseItemDiscriminatorType? Type325 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistsItemsResponse? Type326 { get; set; }
+        public global::Spotify.GetUsersTopArtistsAndTracksResponse3? Type326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistsItemsResponse2? Type327 { get; set; }
+        public global::Spotify.GetUsersTopArtistsAndTracksResponse4? Type327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetPlaylistsItemsResponse3? Type328 { get; set; }
+        public global::Spotify.GetUsersTopArtistsAndTracksResponse5? Type328 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddItemsToPlaylistResponse? Type329 { get; set; }
+        public global::Spotify.GetUsersProfileResponse? Type329 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddItemsToPlaylistResponse2? Type330 { get; set; }
+        public global::Spotify.GetListUsersPlaylistsResponse? Type330 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddItemsToPlaylistResponse3? Type331 { get; set; }
+        public global::Spotify.CreatePlaylistForUserResponse? Type331 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.AddItemsToPlaylistResponse4? Type332 { get; set; }
+        public global::Spotify.FollowPlaylistResponse? Type332 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse? Type333 { get; set; }
+        public global::Spotify.UnfollowPlaylistResponse? Type333 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse2? Type334 { get; set; }
+        public global::Spotify.GetFeaturedPlaylistsResponse? Type334 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse3? Type335 { get; set; }
+        public global::Spotify.GetCategoriesResponse? Type335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.ReorderOrReplacePlaylistsItemsResponse4? Type336 { get; set; }
+        public global::Spotify.AllOf<global::Spotify.PagingObject, global::Spotify.GetCategoriesResponseCategories2>? Type336 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveItemsPlaylistResponse? Type337 { get; set; }
+        public global::Spotify.GetCategoriesResponseCategories2? Type337 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveItemsPlaylistResponse2? Type338 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.CategoryObject>? Type338 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveItemsPlaylistResponse3? Type339 { get; set; }
+        public global::Spotify.GetCategoriesResponse2? Type339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveItemsPlaylistResponse4? Type340 { get; set; }
+        public global::Spotify.GetCategoriesResponse3? Type340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAListOfCurrentUsersPlaylistsResponse? Type341 { get; set; }
+        public global::Spotify.GetCategoriesResponse4? Type341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAListOfCurrentUsersPlaylistsResponse2? Type342 { get; set; }
+        public global::Spotify.GetACategoryResponse? Type342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetAListOfCurrentUsersPlaylistsResponse3? Type343 { get; set; }
+        public global::Spotify.GetACategoriesPlaylistsResponse? Type343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CreatePlaylistResponse? Type344 { get; set; }
+        public global::Spotify.GetPlaylistCoverResponse? Type344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CreatePlaylistResponse2? Type345 { get; set; }
+        public global::Spotify.UploadCustomPlaylistCoverResponse? Type345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CreatePlaylistResponse3? Type346 { get; set; }
+        public global::Spotify.GetNewReleasesResponse? Type346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveLibraryItemsResponse? Type347 { get; set; }
+        public global::Spotify.GetNewReleasesResponse2? Type347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveLibraryItemsResponse2? Type348 { get; set; }
+        public global::Spotify.GetNewReleasesResponse3? Type348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveLibraryItemsResponse3? Type349 { get; set; }
+        public global::Spotify.GetNewReleasesResponse4? Type349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveLibraryItemsResponse? Type350 { get; set; }
+        public global::Spotify.GetFollowedResponse? Type350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveLibraryItemsResponse2? Type351 { get; set; }
+        public global::Spotify.GetFollowedResponse2? Type351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveLibraryItemsResponse3? Type352 { get; set; }
+        public global::Spotify.GetFollowedResponse3? Type352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckLibraryContainsResponse? Type353 { get; set; }
+        public global::Spotify.GetFollowedResponse4? Type353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckLibraryContainsResponse2? Type354 { get; set; }
+        public global::Spotify.FollowArtistsUsersResponse? Type354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckLibraryContainsResponse3? Type355 { get; set; }
+        public global::Spotify.UnfollowArtistsUsersResponse? Type355 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedAlbumsResponse? Type356 { get; set; }
+        public global::Spotify.CheckCurrentUserFollowsResponse? Type356 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedAlbumsResponse2? Type357 { get; set; }
+        public global::Spotify.CheckIfUserFollowsPlaylistResponse? Type357 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedAlbumsResponse3? Type358 { get; set; }
+        public global::Spotify.GetSeveralAudioFeaturesResponse? Type358 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveAlbumsUserResponse? Type359 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.AudioFeaturesObject>? Type359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveAlbumsUserResponse2? Type360 { get; set; }
+        public global::Spotify.GetSeveralAudioFeaturesResponse2? Type360 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveAlbumsUserResponse3? Type361 { get; set; }
+        public global::Spotify.GetSeveralAudioFeaturesResponse3? Type361 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveAlbumsUserResponse? Type362 { get; set; }
+        public global::Spotify.GetSeveralAudioFeaturesResponse4? Type362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveAlbumsUserResponse2? Type363 { get; set; }
+        public global::Spotify.GetAudioFeaturesResponse? Type363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveAlbumsUserResponse3? Type364 { get; set; }
+        public global::Spotify.GetAudioAnalysisResponse? Type364 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedAlbumsResponse? Type365 { get; set; }
+        public global::Spotify.GetRecommendationsResponse? Type365 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedAlbumsResponse2? Type366 { get; set; }
+        public global::Spotify.GetRecommendationGenresResponse? Type366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedAlbumsResponse3? Type367 { get; set; }
+        public global::Spotify.GetRecommendationGenresResponse2? Type367 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedTracksResponse? Type368 { get; set; }
+        public global::Spotify.GetRecommendationGenresResponse3? Type368 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedTracksResponse2? Type369 { get; set; }
+        public global::Spotify.GetRecommendationGenresResponse4? Type369 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedTracksResponse3? Type370 { get; set; }
+        public global::Spotify.GetInformationAboutTheUsersCurrentPlaybackResponse? Type370 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveTracksUserResponse? Type371 { get; set; }
+        public global::Spotify.TransferAUsersPlaybackResponse? Type371 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveTracksUserResponse2? Type372 { get; set; }
+        public global::Spotify.GetAUsersAvailableDevicesResponse? Type372 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveTracksUserResponse3? Type373 { get; set; }
+        public global::System.Collections.Generic.IList<global::Spotify.DeviceObject>? Type373 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveTracksUserResponse? Type374 { get; set; }
+        public global::Spotify.GetAUsersAvailableDevicesResponse2? Type374 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveTracksUserResponse2? Type375 { get; set; }
+        public global::Spotify.GetAUsersAvailableDevicesResponse3? Type375 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveTracksUserResponse3? Type376 { get; set; }
+        public global::Spotify.GetAUsersAvailableDevicesResponse4? Type376 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedTracksResponse? Type377 { get; set; }
+        public global::Spotify.GetTheUsersCurrentlyPlayingTrackResponse? Type377 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedTracksResponse2? Type378 { get; set; }
+        public global::Spotify.StartAUsersPlaybackResponse? Type378 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedTracksResponse3? Type379 { get; set; }
+        public global::Spotify.PauseAUsersPlaybackResponse? Type379 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedEpisodesResponse? Type380 { get; set; }
+        public global::Spotify.SkipUsersPlaybackToNextTrackResponse? Type380 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedEpisodesResponse2? Type381 { get; set; }
+        public global::Spotify.SkipUsersPlaybackToPreviousTrackResponse? Type381 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedEpisodesResponse3? Type382 { get; set; }
+        public global::Spotify.SeekToPositionInCurrentlyPlayingTrackResponse? Type382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveEpisodesUserResponse? Type383 { get; set; }
+        public global::Spotify.SetRepeatModeOnUsersPlaybackResponse? Type383 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveEpisodesUserResponse2? Type384 { get; set; }
+        public global::Spotify.SetVolumeForUsersPlaybackResponse? Type384 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.SaveEpisodesUserResponse3? Type385 { get; set; }
+        public global::Spotify.ToggleShuffleForUsersPlaybackResponse? Type385 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveEpisodesUserResponse? Type386 { get; set; }
+        public global::Spotify.GetRecentlyPlayedResponse? Type386 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveEpisodesUserResponse2? Type387 { get; set; }
+        public global::Spotify.GetQueueResponse? Type387 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.RemoveEpisodesUserResponse3? Type388 { get; set; }
+        public global::Spotify.AddToQueueResponse? Type388 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedEpisodesResponse? Type389 { get; set; }
+        public global::Spotify.GetAvailableMarketsResponse? Type389 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedEpisodesResponse2? Type390 { get; set; }
+        public global::Spotify.GetAvailableMarketsResponse2? Type390 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.CheckUsersSavedEpisodesResponse3? Type391 { get; set; }
+        public global::Spotify.GetAvailableMarketsResponse3? Type391 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Spotify.GetUsersSavedShowsResponse? Type392 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersSavedShowsResponse2? Type393 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersSavedShowsResponse3? Type394 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SaveShowsUserResponse? Type395 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SaveShowsUserResponse2? Type396 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SaveShowsUserResponse3? Type397 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.RemoveShowsUserResponse? Type398 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.RemoveShowsUserResponse2? Type399 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.RemoveShowsUserResponse3? Type400 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckUsersSavedShowsResponse? Type401 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckUsersSavedShowsResponse2? Type402 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckUsersSavedShowsResponse3? Type403 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.AllOf<global::Spotify.PagingObject, global::Spotify.GetUsersTopArtistsAndTracksResponse2>? Type404 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersTopArtistsAndTracksResponse2? Type405 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.GetUsersTopArtistsAndTracksResponseItem>? Type406 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersTopArtistsAndTracksResponseItem? Type407 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersTopArtistsAndTracksResponseItemDiscriminator? Type408 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersTopArtistsAndTracksResponseItemDiscriminatorType? Type409 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersTopArtistsAndTracksResponse3? Type410 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersTopArtistsAndTracksResponse4? Type411 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersTopArtistsAndTracksResponse5? Type412 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersProfileResponse? Type413 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersProfileResponse2? Type414 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetUsersProfileResponse3? Type415 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetListUsersPlaylistsResponse? Type416 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetListUsersPlaylistsResponse2? Type417 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetListUsersPlaylistsResponse3? Type418 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CreatePlaylistForUserResponse? Type419 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CreatePlaylistForUserResponse2? Type420 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CreatePlaylistForUserResponse3? Type421 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.FollowPlaylistResponse? Type422 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.FollowPlaylistResponse2? Type423 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.FollowPlaylistResponse3? Type424 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UnfollowPlaylistResponse? Type425 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UnfollowPlaylistResponse2? Type426 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UnfollowPlaylistResponse3? Type427 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetFeaturedPlaylistsResponse? Type428 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetFeaturedPlaylistsResponse2? Type429 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetFeaturedPlaylistsResponse3? Type430 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetCategoriesResponse? Type431 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.AllOf<global::Spotify.PagingObject, global::Spotify.GetCategoriesResponseCategories2>? Type432 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetCategoriesResponseCategories2? Type433 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.CategoryObject>? Type434 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetCategoriesResponse2? Type435 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetCategoriesResponse3? Type436 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetCategoriesResponse4? Type437 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetACategoryResponse? Type438 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetACategoryResponse2? Type439 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetACategoryResponse3? Type440 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetACategoriesPlaylistsResponse? Type441 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetACategoriesPlaylistsResponse2? Type442 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetACategoriesPlaylistsResponse3? Type443 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetPlaylistCoverResponse? Type444 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetPlaylistCoverResponse2? Type445 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetPlaylistCoverResponse3? Type446 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UploadCustomPlaylistCoverResponse? Type447 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UploadCustomPlaylistCoverResponse2? Type448 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UploadCustomPlaylistCoverResponse3? Type449 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetNewReleasesResponse? Type450 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetNewReleasesResponse2? Type451 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetNewReleasesResponse3? Type452 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetNewReleasesResponse4? Type453 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetFollowedResponse? Type454 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetFollowedResponse2? Type455 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetFollowedResponse3? Type456 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetFollowedResponse4? Type457 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.FollowArtistsUsersResponse? Type458 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.FollowArtistsUsersResponse2? Type459 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.FollowArtistsUsersResponse3? Type460 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UnfollowArtistsUsersResponse? Type461 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UnfollowArtistsUsersResponse2? Type462 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.UnfollowArtistsUsersResponse3? Type463 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckCurrentUserFollowsResponse? Type464 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckCurrentUserFollowsResponse2? Type465 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckCurrentUserFollowsResponse3? Type466 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckIfUserFollowsPlaylistResponse? Type467 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckIfUserFollowsPlaylistResponse2? Type468 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.CheckIfUserFollowsPlaylistResponse3? Type469 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetSeveralAudioFeaturesResponse? Type470 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.AudioFeaturesObject>? Type471 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetSeveralAudioFeaturesResponse2? Type472 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetSeveralAudioFeaturesResponse3? Type473 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetSeveralAudioFeaturesResponse4? Type474 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAudioFeaturesResponse? Type475 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAudioFeaturesResponse2? Type476 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAudioFeaturesResponse3? Type477 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAudioAnalysisResponse? Type478 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAudioAnalysisResponse2? Type479 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAudioAnalysisResponse3? Type480 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecommendationsResponse? Type481 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecommendationsResponse2? Type482 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecommendationsResponse3? Type483 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecommendationGenresResponse? Type484 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecommendationGenresResponse2? Type485 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecommendationGenresResponse3? Type486 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecommendationGenresResponse4? Type487 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetInformationAboutTheUsersCurrentPlaybackResponse? Type488 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetInformationAboutTheUsersCurrentPlaybackResponse2? Type489 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetInformationAboutTheUsersCurrentPlaybackResponse3? Type490 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.TransferAUsersPlaybackResponse? Type491 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.TransferAUsersPlaybackResponse2? Type492 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.TransferAUsersPlaybackResponse3? Type493 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAUsersAvailableDevicesResponse? Type494 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Spotify.DeviceObject>? Type495 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAUsersAvailableDevicesResponse2? Type496 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAUsersAvailableDevicesResponse3? Type497 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAUsersAvailableDevicesResponse4? Type498 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetTheUsersCurrentlyPlayingTrackResponse? Type499 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetTheUsersCurrentlyPlayingTrackResponse2? Type500 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetTheUsersCurrentlyPlayingTrackResponse3? Type501 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.StartAUsersPlaybackResponse? Type502 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.StartAUsersPlaybackResponse2? Type503 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.StartAUsersPlaybackResponse3? Type504 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.PauseAUsersPlaybackResponse? Type505 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.PauseAUsersPlaybackResponse2? Type506 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.PauseAUsersPlaybackResponse3? Type507 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SkipUsersPlaybackToNextTrackResponse? Type508 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SkipUsersPlaybackToNextTrackResponse2? Type509 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SkipUsersPlaybackToNextTrackResponse3? Type510 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SkipUsersPlaybackToPreviousTrackResponse? Type511 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SkipUsersPlaybackToPreviousTrackResponse2? Type512 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SkipUsersPlaybackToPreviousTrackResponse3? Type513 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SeekToPositionInCurrentlyPlayingTrackResponse? Type514 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SeekToPositionInCurrentlyPlayingTrackResponse2? Type515 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SeekToPositionInCurrentlyPlayingTrackResponse3? Type516 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SetRepeatModeOnUsersPlaybackResponse? Type517 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SetRepeatModeOnUsersPlaybackResponse2? Type518 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SetRepeatModeOnUsersPlaybackResponse3? Type519 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SetVolumeForUsersPlaybackResponse? Type520 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SetVolumeForUsersPlaybackResponse2? Type521 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.SetVolumeForUsersPlaybackResponse3? Type522 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.ToggleShuffleForUsersPlaybackResponse? Type523 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.ToggleShuffleForUsersPlaybackResponse2? Type524 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.ToggleShuffleForUsersPlaybackResponse3? Type525 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecentlyPlayedResponse? Type526 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecentlyPlayedResponse2? Type527 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetRecentlyPlayedResponse3? Type528 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetQueueResponse? Type529 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetQueueResponse2? Type530 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetQueueResponse3? Type531 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.AddToQueueResponse? Type532 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.AddToQueueResponse2? Type533 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.AddToQueueResponse3? Type534 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAvailableMarketsResponse? Type535 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAvailableMarketsResponse2? Type536 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAvailableMarketsResponse3? Type537 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Spotify.GetAvailableMarketsResponse4? Type538 { get; set; }
+        public global::Spotify.GetAvailableMarketsResponse4? Type392 { get; set; }
 
         /// <summary>
         ///
